@@ -1043,6 +1043,7 @@ td.top-align {
   height: 0;
   padding-bottom: 490px;
   overflow: hidden;
+  pointer-events: none;
 }
 /* Artists I've seen in concert */
 .poster {

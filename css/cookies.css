@@ -1,0 +1,80 @@
+@keyframes desaparecer
+{
+0%    {bottom: 0px;}
+80%   {bottom: 0px;}
+100%    {bottom: -50px;}
+}
+ 
+@-webkit-keyframes desaparecer /* Safari and Chrome */
+{
+0%    {bottom: 0px;}
+80%   {bottom: 0px;}
+100%    {bottom: -50px;}
+}
+ 
+@keyframes aparecer
+{
+0%    {bottom: -38px;}
+10%   {bottom: 0px;}
+90%   {bottom: 0px;}
+100%    {bottom: -38px;}
+}
+ 
+@-webkit-keyframes aparecer /* Safari and Chrome */
+{
+0%    {bottom: -38px;}
+10%   {bottom: 0px;}
+90%   {bottom: 0px;}
+100%    {bottom: -38px;}
+}
+#cookiesms1:target {
+    display: none;
+}
+.cookiesms{ 
+  width:100%;
+  height:43px;
+  margin:0 auto;
+  padding: 12px;
+  font-size:10px;
+  font-family: sans-serif;
+  clear:both;
+  color: #ccc;
+  bottom:-50px;
+  position:fixed;
+  left: 0px;
+  background-color: #000;
+  opacity:0.8;
+  transition: bottom 1s;
+  -webkit-transition:bottom 1s; /* Safari */
+  z-index:1;
+}
+ 
+.cookiesms:hover{
+  bottom:0px;
+}
+.cookies2{
+background-color: #000;
+display:inline;
+opacity:0.95;
+position:absolute; 
+left:5px; 
+top:-30px;
+height: 30px;
+font-size:10px;
+padding:8px;
+
+}
+
+
+.cookies-policy h1,h3{
+  font-weight: bold;
+  margin: 0.5em 0;
+}
+
+.cookies-policy h1{
+  font-size: 1.5em;
+}
+
+.cookies-policy p{
+  margin: 0.5em 0;
+}

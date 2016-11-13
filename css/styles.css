@@ -1320,3 +1320,12 @@ textarea {
 .contact-info a:hover {
   color: #6bbfcb;
 }
+#lbBottomContainer {
+  z-index: 1 !important;
+}
+#lbBottom {
+  background: #fff;
+}
+#lbOverlay {
+  z-index: -1 !important;
+}

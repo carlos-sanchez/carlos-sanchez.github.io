@@ -1036,14 +1036,9 @@ td.top-align {
   }
 }
 .map-wrapper {
-  position: absolute;
-  width: 98%;
-  left: 10px;
-  margin-top: 20px;
-  height: 0;
-  padding-bottom: 490px;
   overflow: hidden;
-  pointer-events: none;
+  width: 90%;
+  margin: 3rem auto;
 }
 /* Artists I've seen in concert */
 .poster {
@@ -1328,4 +1323,15 @@ textarea {
 }
 #lbOverlay {
   z-index: -1 !important;
+}
+.countries-list {
+  max-width: 800px;
+  margin: 2rem auto 6rem;
+  text-align: center;
+  color: #aaa;
+}
+.countries-list li {
+  float: left;
+  width: 25%;
+  line-height: 3;
 }

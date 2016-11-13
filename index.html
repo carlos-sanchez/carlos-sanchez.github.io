@@ -78,23 +78,22 @@
 
 	<div id="block" class="clearfix">
 
-		<!-- <p class="worked-for" id="brandsWorked">SOME BRANDS I HAVE WORKED FOR</p>	 -->
+		<p class="worked-for" id="brandsWorked">SOME BRANDS I'VE WORKED FOR</p>
 
 
 			<section class="clients">
 
 				<ul>
-					<li id="svg-amazon"></li>
+          <li id="svg-amazon"></li>
+          <li id="svg-box"></li>
 					<li id="svg-hallmark"></li>
-					<!-- <li id="svg-bellarmine"></li> -->
-					<li id="svg-thyssen"></li>
-					<li id="svg-ayuntamiento"></li>
-				</ul><!-- /clients-logos -->
+          <li id="svg-pearson"></li>
+				</ul>
 
 
-			</section><!-- /clients -->
+			</section>
 
-	</div><!-- /block -->
+	</div>
 
 
 
@@ -328,10 +327,12 @@
 
 	$(function(){
 		$('#svg-amazon').load('svg.html #amazon-logo');
+    $('#svg-box').load('svg.html #box-logo');
 		$('#svg-hallmark').load('svg.html #hallmark-logo');
+    $('#svg-pearson').load('svg.html #pearson-logo');
 		// $('#svg-bellarmine').load('svg.html #bellarmine-logo');
-		$('#svg-thyssen').load('svg.html #thyssen-logo');
-		$('#svg-ayuntamiento').load('svg.html #ayuntamiento-logo');
+		// $('#svg-thyssen').load('svg.html #thyssen-logo');
+		// $('#svg-ayuntamiento').load('svg.html #ayuntamiento-logo');
 		$('#svg-intef').load('svg.html #premio-intef');
 		$('#svg-combocarte').load('svg.html #premio-combocarte');
 	});

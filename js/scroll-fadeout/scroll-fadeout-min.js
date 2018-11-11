@@ -1,0 +1,1 @@
+$(window).scroll(function(){$(window).width()>480&&($(window).scrollTop()>=60?$("#elevatorPitch").fadeOut("50"):$("#elevatorPitch").fadeIn("50"))});

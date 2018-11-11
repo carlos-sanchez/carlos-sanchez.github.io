@@ -1,0 +1,154 @@
+
+.body-wrapper{
+	width: 100%;
+	max-width: 1280px;
+	display: block;
+	margin: 0 auto;
+	position: relative; /* containing block */
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+
+.header{
+	height:60vmin;
+	min-height: 420px;
+	position: relative; /* neccesary to apply z-index -1 */
+	z-index: 0;
+}
+
+
+@media screen and (max-width: @mobile-bp){
+	.header{
+		height:auto;
+		padding-bottom:60px;
+		background: rgba(0,0,0,.5);
+	}
+}
+
+
+.header-bg{
+	position: fixed;
+	height:60vmin;
+	min-height: 420px;
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+	background: @gray-light url('../img/meteora@2.jpg') no-repeat center center;
+	background-size: cover;
+	z-index: -1;
+}
+
+
+.nav{
+	position: relative;
+	font-size: 1rem;
+	.clearfix;
+	li{
+		float: left;
+		margin-left: 16px;
+	}
+	a{
+		text-decoration: none;
+	}
+}
+
+.header__contact{
+	float: right;
+	top: 20px;
+	svg{
+		path{
+			fill: @green;
+		}
+	}
+}
+
+.footer__contact{
+	a{
+		color: @green;
+		font-weight: @weight-bold;
+	}
+	li{
+		svg{
+			path{
+				fill: @green;
+			}
+		}
+	}
+}
+
+
+
+.main{
+	background: #fff;
+}
+
+
+.container{
+	width:96%;
+  max-width: 1200px;
+	padding:10px;
+	margin: 0 auto; /*centra horizontalmente */
+	position:relative; /* -> containing block */
+	z-index:1; /* afecta a las sobras de los thumbnails */
+}
+
+
+
+
+.logo{
+	position:relative;
+	top:20px;
+	font-family: @logo-font;
+	color:#fff;
+	text-decoration:none;
+}
+
+
+
+
+/* HOME */
+
+.elevator-pitch{
+	position: fixed;
+	width:420px;
+	color:#fff;
+	top:20vmin;
+	font-size:1.1rem;
+	font-weight:300;
+	z-index: 0;
+  line-height: 1.5;
+	span{
+		font-family: 'Rufina', serif;
+		font-size:1.5em;
+		display: block;
+		margin-bottom:0.3em;
+		font-weight: @weight-bold;
+	}
+	a{
+		color: #fff;
+		text-decoration: underline;
+	}
+}
+
+
+
+@media screen and (max-width: 480px){
+	.elevator-pitch{
+		position: relative;
+		top:40px;
+		width:100%;
+	}
+}
+
+
+
+
+
+/* FOOTER */
+
+
+.footer{
+	clear:both;
+	z-index: 1;
+	position: relative;
+}

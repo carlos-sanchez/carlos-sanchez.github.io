@@ -77,35 +77,13 @@
 		},
 	"\/img\/meteora.jpg": {
 		"ft": 16384,
-		"iS": 81330,
+		"iS": 180769,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "\/img\/meteora.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
-		"q": 100
-		},
-	"\/img\/meteora@2.jpg": {
-		"ft": 16384,
-		"iS": 180769,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/img\/meteora@2.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/img\/social-networks.png": {
-		"ft": 32768,
-		"iS": 2001,
-		"oA": 0,
-		"oAP": "\/img\/social-networks.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
 		"q": 100
 		},
 	"\/index.html": {

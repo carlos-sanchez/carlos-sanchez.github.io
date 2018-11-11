@@ -367,7 +367,7 @@ html a {
 }
 body {
   font: 400 18px/1.61em 'Roboto', sans-serif;
-  color: #222F3B;
+  color: #3A4E61;
   background: #f5f5f5;
 }
 h1,
@@ -474,7 +474,7 @@ a {
 }
 .nav li {
   float: left;
-  margin-left: 16px;
+  padding: 0 8px;
 }
 .nav a {
   text-decoration: none;
@@ -498,14 +498,18 @@ a {
 }
 .container {
   width: 96%;
-  max-width: 1200px;
-  padding: 10px;
+  padding: 0 32px;
   margin: 0 auto;
   /*centra horizontalmente */
   position: relative;
   /* -> containing block */
   z-index: 1;
   /* afecta a las sobras de los thumbnails */
+}
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 0 16px;
+  }
 }
 .logo {
   position: relative;
@@ -536,17 +540,34 @@ a {
   color: #fff;
   text-decoration: underline;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .elevator-pitch {
     position: relative;
     top: 40px;
     width: 100%;
   }
 }
-/* FOOTER */
 .footer {
   clear: both;
   z-index: 1;
   position: relative;
+  background: #fff;
+  padding: 32px 0;
+}
+.tag-selector {
+  padding: 32px 0;
+}
+.tag-selector li {
+  cursor: pointer;
+  border: 2px solid transparent;
+  margin-bottom: 8px;
+}
+.tag-selector li:hover {
+  color: #4BC4A9;
+}
+.tag-selector .selected {
+  color: #4BC4A9;
+  font-weight: 700;
+  border-bottom: 2px solid #4BC4A9;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,7 +1,7 @@
 
 .body-wrapper{
 	width: 100%;
-	max-width: 1280px;
+	max-width: @max-width;
 	display: block;
 	margin: 0 auto;
 	position: relative; /* containing block */
@@ -31,7 +31,7 @@
 	height:60vmin;
 	min-height: 420px;
 	width: 100%;
-	max-width: 1280px;
+	max-width: @max-width;
 	margin: 0 auto;
 	background: @gray-light url('../img/meteora@2.jpg') no-repeat center center;
 	background-size: cover;
@@ -45,7 +45,7 @@
 	.clearfix;
 	li{
 		float: left;
-		margin-left: 16px;
+		padding: 0 @grid-unit;
 	}
 	a{
 		text-decoration: none;
@@ -57,20 +57,20 @@
 	top: 20px;
 	svg{
 		path{
-			fill: @green;
+			fill: @primary;
 		}
 	}
 }
 
 .footer__contact{
 	a{
-		color: @green;
+		color: @primary;
 		font-weight: @weight-bold;
 	}
 	li{
 		svg{
 			path{
-				fill: @green;
+				fill: @primary;
 			}
 		}
 	}
@@ -85,13 +85,18 @@
 
 .container{
 	width:96%;
-  max-width: 1200px;
-	padding:10px;
+	padding: 0 @grid-unit*4;
 	margin: 0 auto; /*centra horizontalmente */
 	position:relative; /* -> containing block */
 	z-index:1; /* afecta a las sobras de los thumbnails */
 }
 
+
+@media screen and (max-width: @mobile-bp){
+	.container{
+		padding: 0 @grid-unit*2;
+	}
+}
 
 
 
@@ -132,7 +137,7 @@
 
 
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: @mobile-bp){
 	.elevator-pitch{
 		position: relative;
 		top:40px;
@@ -143,12 +148,28 @@
 
 
 
-
-/* FOOTER */
-
-
 .footer{
 	clear:both;
 	z-index: 1;
 	position: relative;
+	background: #fff;
+	padding: @grid-unit*4 0;
+}
+
+
+.tag-selector{
+	padding: @grid-unit*4 0;
+	li{
+		cursor: pointer;
+		border: 2px solid transparent;
+		margin-bottom: @grid-unit;
+		&:hover{
+			color: @primary;
+		}
+	}
+	.selected{
+		color: @primary;
+		font-weight: @weight-bold;
+		border-bottom: 2px solid @primary;
+	}
 }

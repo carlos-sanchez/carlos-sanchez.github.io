@@ -26,13 +26,6 @@
 }
 
 
-.text-shadow (@col) when (iscolor(@col)) {
-  text-shadow: 0px 0px 5px @col;
-}
-
-.text-shadow(@val) when (iskeyword(@val)) {
-  text-shadow: @val;
-}
 
 .opacity (@percent) {
   opacity: @percent / 100;

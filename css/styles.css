@@ -415,6 +415,9 @@ a {
   text-decoration: none;
   pointer-events: none;
 }
+.text-shadow {
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
 .col {
   float: left;
   min-height: 1em;
@@ -600,6 +603,7 @@ a {
   *zoom: 1;
   /* IE 6/7 support */
   position: relative;
+  background-color: #3A4E61;
 }
 .project-list__item:before,
 .project-list__item:after {

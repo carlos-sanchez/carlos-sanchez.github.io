@@ -366,7 +366,7 @@ html a {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
 }
 body {
-  font: 400 18px/1.61em 'Roboto', sans-serif;
+  font: 400 16px/1.61em 'Roboto', sans-serif;
   color: #3A4E61;
   background: #f5f5f5;
 }
@@ -402,18 +402,6 @@ a {
 .clearfix:after {
   clear: both;
 }
-.padding-vertical {
-  padding: 6rem 0;
-}
-.padding-vertical-extra {
-  padding: 8rem 0;
-}
-.padding-top {
-  padding-top: 6rem;
-}
-.padding-bottom {
-  padding-bottom: 6rem;
-}
 .containing-block {
   position: relative;
 }
@@ -423,13 +411,39 @@ a {
 .center {
   text-align: center;
 }
+.disabled-link {
+  text-decoration: none;
+  pointer-events: none;
+}
+.col {
+  float: left;
+  min-height: 1em;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.col6 {
+  width: 100%;
+}
+.col--left {
+  float: left;
+}
+.col--right {
+  float: right;
+}
+@media screen and (min-width: 960px) {
+  .col6 {
+    width: 50%;
+  }
+}
 .body-wrapper {
   width: 100%;
   max-width: 1280px;
   display: block;
   margin: 0 auto;
   position: relative;
-  /* containing block */
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 .header {
@@ -453,7 +467,7 @@ a {
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  background: #f5f5f5 url('../img/meteora.jpg') no-repeat center center;
+  background: #f5f5f5 url('../img/hero.jpg') no-repeat center center;
   background-size: cover;
   z-index: -1;
 }
@@ -484,27 +498,38 @@ a {
   top: 20px;
 }
 .header__contact svg path {
-  fill: #4BC4A9;
+  fill: #3F80F9;
+}
+@media screen and (max-width: 600px) {
+  .header__contact svg path {
+    fill: #fff;
+  }
 }
 .footer__contact a {
-  color: #4BC4A9;
-  font-weight: 700;
+  color: #3F80F9;
 }
 .footer__contact li svg path {
-  fill: #4BC4A9;
+  fill: #3F80F9;
 }
 .main-content {
   background: #fff;
+  position: relative;
+  /* to apply z-index */
+  z-index: 1;
 }
 .container {
-  width: 96%;
-  padding: 0 32px;
+  width: 100%;
+  padding: 0 64px;
   margin: 0 auto;
   /*centra horizontalmente */
   position: relative;
-  /* -> containing block */
   z-index: 1;
   /* afecta a las sobras de los thumbnails */
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 @media screen and (max-width: 600px) {
   .container {
@@ -521,20 +546,19 @@ a {
 /* HOME */
 .elevator-pitch {
   position: fixed;
-  width: 420px;
+  width: 480px;
   color: #fff;
   top: 20vmin;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   font-weight: 300;
   z-index: 0;
   line-height: 1.5;
 }
 .elevator-pitch span {
-  font-family: 'Rufina', serif;
+  font-family: 'Alfa Slab One', sans-serif;
   font-size: 1.5em;
   display: block;
   margin-bottom: 0.3em;
-  font-weight: 700;
 }
 .elevator-pitch a {
   color: #fff;
@@ -559,15 +583,302 @@ a {
 }
 .tag-selector li {
   cursor: pointer;
-  border: 2px solid transparent;
-  margin-bottom: 8px;
+  border-bottom: 2px solid transparent;
+  margin: 8px 1%;
 }
 .tag-selector li:hover {
-  color: #4BC4A9;
+  color: #3F80F9;
 }
 .tag-selector .selected {
-  color: #4BC4A9;
+  color: #3F80F9;
   font-weight: 700;
-  border-bottom: 2px solid #4BC4A9;
+  border-bottom: 2px solid #3F80F9;
+}
+.project-list__item {
+  *zoom: 1;
+  /* IE 6/7 support */
+  position: relative;
+  overflow: hidden;
+}
+.project-list__item:before,
+.project-list__item:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.project-list__item:after {
+  clear: both;
+}
+.project-list__item--dark-bg {
+  color: #fff;
+}
+.project-list__item--dark-bg .project-list__item__info__tags li {
+  background: #fff;
+  color: #3A4E61;
+}
+.project-list__item--dark-bg .project-list__item__info__read-more:hover {
+  border-color: #fff;
+}
+.project-list__item--bb8 {
+  /* can be treated like a fallback */
+  background-color: #d3d3d7;
+  /* will be "on top", if browser supports it */
+  background-image: linear-gradient(#d3d3d7, #f3f3f1);
+  /* these will reset other properties, like background-position, but it does know what you mean */
+  background: #d3d3d7;
+  background: linear-gradient(45deg, #d3d3d7 0%, #f3f3f1 100%);
+}
+.project-list__item--bbl {
+  background-color: #206195;
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.184 20c.357-.13.72-.264 1.088-.402l1.768-.661C33.64 15.347 39.647 14 50 14c10.271 0 15.362 1.222 24.629 4.928.955.383 1.869.74 2.75 1.072h6.225c-2.51-.73-5.139-1.691-8.233-2.928C65.888 13.278 60.562 12 50 12c-10.626 0-16.855 1.397-26.66 5.063l-1.767.662c-2.475.923-4.66 1.674-6.724 2.275h6.335zm0-20C13.258 2.892 8.077 4 0 4V2c5.744 0 9.951-.574 14.85-2h6.334zM77.38 0C85.239 2.966 90.502 4 100 4V2c-6.842 0-11.386-.542-16.396-2h-6.225zM0 14c8.44 0 13.718-1.21 22.272-4.402l1.768-.661C33.64 5.347 39.647 4 50 4c10.271 0 15.362 1.222 24.629 4.928C84.112 12.722 89.438 14 100 14v-2c-10.271 0-15.362-1.222-24.629-4.928C65.888 3.278 60.562 2 50 2 39.374 2 33.145 3.397 23.34 7.063l-1.767.662C13.223 10.84 8.163 12 0 12v2z' fill='%23477294' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+.project-list__item--nes {
+  background-color: #000;
+}
+.project-list__item--ux-talk {
+  background-image: url(../img/projects/ux-talk.png);
+  background-size: cover;
+  background-position: bottom center;
+}
+.project-list__item--validation-talk {
+  background-image: url(../img/projects/validation-talk.png);
+  background-size: cover;
+  background-position: bottom left;
+}
+.project-list__item--product-process {
+  background-image: url(../img/projects/product-process-talk.png);
+  background-size: cover;
+  background-position: bottom right;
+}
+.project-list__item--doctor24 {
+  background-image: url(../img/projects/doctor24.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+@media screen and (min-width: 960px) {
+  .project-list__item--ux-talk {
+    background-position: bottom center;
+  }
+  .project-list__item--validation-talk {
+    background-position: bottom center;
+  }
+  .project-list__item--product-process {
+    background-position: bottom center;
+  }
+}
+.nes-grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: url(../img/projects/nes-bg.jpg);
+  background-size: cover;
+  background-position: top center;
+  z-index: 0;
+}
+.project-list__item__bg-img {
+  position: absolute;
+  bottom: 0;
+  height: 300px;
+  background-repeat: no-repeat;
+  width: 80%;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  z-index: 1;
+}
+.project-list__item__bg-img--left {
+  left: 10%;
+}
+.project-list__item__bg-img--right {
+  right: 10%;
+}
+.project-list__item__bg-img--screenshot {
+  border-radius: 8px 8px 0 0;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+.project-list__item__bg-img--bb8 {
+  background-image: url(../img/projects/bb8-render.png);
+  background-size: cover;
+  background-position: top center;
+}
+.project-list__item__bg-img--bbl {
+  background-image: url(../img/projects/beachboyslegacy.png);
+  background-size: cover;
+}
+.project-list__item__bg-img--nes {
+  background-image: url(../img/projects/nes-mini.png);
+  background-size: contain;
+  background-position: center center;
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 960px) {
+  .project-list__item__bg-img {
+    top: 0;
+    height: 100%;
+    width: 50%;
+  }
+  .project-list__item__bg-img--left {
+    left: 0;
+  }
+  .project-list__item__bg-img--right {
+    right: 0;
+  }
+  .project-list__item__bg-img--screenshot {
+    top: 10%;
+  }
+  .project-list__item__bg-img--screenshot.project-list__item__bg-img--right {
+    border-radius: 8px 0 0 0;
+  }
+  .project-list__item__bg-img--screenshot.project-list__item__bg-img--left {
+    border-radius: 0 8px 0 0;
+  }
+  .project-list__item__bg-img--bb8 {
+    left: 5%;
+    top: 5%;
+    background-position: top;
+  }
+  .project-list__item__bg-img--nes {
+    left: 5%;
+  }
+}
+.project-list__item__info {
+  padding: 10% 10% 320px;
+  position: relative;
+  z-index: 1;
+}
+@media screen and (min-width: 960px) {
+  .project-list__item__info {
+    padding: 10% 8%;
+  }
+}
+.project-list__item__info__title {
+  font-size: 2rem;
+  font-family: 'Alfa Slab One', sans-serif;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+.project-list__item__info__tags li {
+  display: inline-block;
+  font-size: .8rem;
+  background: #3A4E61;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 16px;
+  line-height: 1rem;
+}
+.project-list__item__info__read-more {
+  text-decoration: none;
+  font-weight: 700;
+  border-bottom: 2px solid transparent;
+  padding: 8px 0;
+}
+.project-list__item__info__read-more:hover {
+  border-color: #3A4E61;
+}
+.flickering {
+  animation-name: flicker;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes flicker {
+  from {
+    opacity: 1;
+  }
+  2% {
+    opacity: 0.5;
+  }
+  3% {
+    opacity: 0.45;
+  }
+  4% {
+    opacity: 0.55;
+  }
+  5% {
+    opacity: 0.45;
+  }
+  6% {
+    opacity: 0.5;
+  }
+  7% {
+    opacity: 0.65;
+  }
+  8% {
+    opacity: 0.55;
+  }
+  9% {
+    opacity: 0.70;
+  }
+  10% {
+    opacity: 0.55;
+  }
+  11% {
+    opacity: 0.5;
+  }
+  12% {
+    opacity: 0.5;
+  }
+  13% {
+    opacity: 0.5;
+  }
+  14% {
+    opacity: 0.69;
+  }
+  15% {
+    opacity: 0.5;
+  }
+  16% {
+    opacity: 0.45;
+  }
+  20% {
+    opacity: 0.5;
+  }
+  21% {
+    opacity: 0.6;
+  }
+  22% {
+    opacity: 0.5;
+  }
+  23% {
+    opacity: 0.5;
+  }
+  24% {
+    opacity: 0.5;
+  }
+  25% {
+    opacity: 0.75;
+  }
+  30% {
+    opacity: 0.5;
+  }
+  34% {
+    opacity: 0.5;
+  }
+  35% {
+    opacity: .6;
+    /*peak*/
+  }
+  36% {
+    opacity: 0.5;
+  }
+  46% {
+    opacity: 0.5;
+  }
+  47% {
+    opacity: .6;
+    /*peak*/
+  }
+  48% {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

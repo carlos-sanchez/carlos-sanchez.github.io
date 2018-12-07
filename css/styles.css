@@ -539,7 +539,7 @@ a {
 .logo {
   position: relative;
   top: 20px;
-  font-family: 'Sanchez', sans-serif;
+  font-family: 'Sanchez', 'Roboto', sans-serif;
   color: #fff;
   text-decoration: none;
 }
@@ -555,7 +555,7 @@ a {
   line-height: 1.5;
 }
 .elevator-pitch span {
-  font-family: 'Alfa Slab One', sans-serif;
+  font-family: 'Alfa Slab One', 'Roboto', sans-serif;
   font-size: 1.5em;
   display: block;
   margin-bottom: 0.3em;
@@ -595,10 +595,11 @@ a {
   border-bottom: 2px solid #3F80F9;
 }
 .project-list__item {
+  min-height: 600px;
+  overflow: hidden;
   *zoom: 1;
   /* IE 6/7 support */
   position: relative;
-  overflow: hidden;
 }
 .project-list__item:before,
 .project-list__item:after {
@@ -759,7 +760,7 @@ a {
 }
 .project-list__item__info__title {
   font-size: 2rem;
-  font-family: 'Alfa Slab One', sans-serif;
+  font-family: 'Alfa Slab One', 'Roboto', sans-serif;
   margin-bottom: 1rem;
   line-height: 1.2;
 }

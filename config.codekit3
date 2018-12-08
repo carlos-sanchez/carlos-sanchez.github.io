@@ -16,6 +16,17 @@
 		"oAP": "\/.gitignore",
 		"oF": 0
 		},
+	"\/carlos-sanchez-website.png": {
+		"ft": 32768,
+		"iS": 253329,
+		"oA": 0,
+		"oAP": "\/carlos-sanchez-website.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/CNAME": {
 		"cB": 0,
 		"ft": 8192,
@@ -64,6 +75,17 @@
 		"oAP": "\/favicon.ico",
 		"oF": 0
 		},
+	"\/icon.png": {
+		"ft": 32768,
+		"iS": 3475,
+		"oA": 0,
+		"oAP": "\/icon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/img\/hero.jpg": {
 		"ft": 16384,
 		"iS": 180769,
@@ -105,7 +127,7 @@
 		"oAP": "\/img\/projects\/doctor24.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/img\/projects\/nes-bg.jpg": {
@@ -130,37 +152,37 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/img\/projects\/product-process-talk.png": {
-		"ft": 32768,
-		"iS": 961791,
+	"\/img\/projects\/product-process-talk.jpg": {
+		"ft": 16384,
+		"iS": 261021,
+		"jF": 0,
 		"oA": 0,
-		"oAP": "\/img\/projects\/product-process-talk.png",
+		"oAP": "\/img\/projects\/product-process-talk.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
+		"opt": 1,
 		"q": 100
 		},
-	"\/img\/projects\/ux-talk.png": {
-		"ft": 32768,
-		"iS": 2152898,
+	"\/img\/projects\/ux-talk.jpg": {
+		"ft": 16384,
+		"iS": 116039,
+		"jF": 0,
 		"oA": 0,
-		"oAP": "\/img\/projects\/ux-talk.png",
+		"oAP": "\/img\/projects\/ux-talk.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
+		"opt": 1,
 		"q": 100
 		},
-	"\/img\/projects\/validation-talk.png": {
-		"ft": 32768,
-		"iS": 28584473,
+	"\/img\/projects\/validation-talk.jpg": {
+		"ft": 16384,
+		"iS": 338418,
+		"jF": 0,
 		"oA": 0,
-		"oAP": "\/img\/projects\/validation-talk.png",
+		"oAP": "\/img\/projects\/validation-talk.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
+		"opt": 1,
 		"q": 100
 		},
 	"\/index.html": {
@@ -309,6 +331,33 @@
 		"sM": 0,
 		"sU": 0
 		},
+	"\/styles\/cookies-policy.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/styles\/cookies-policy-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/styles\/cookies-policy.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/styles\/cookies-policy.css",
+		"oF": 1,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
 	"\/styles\/main.less": {
 		"aP": 0,
 		"bl": 0,
@@ -337,7 +386,7 @@
 		"oA": 0,
 		"oAP": "\/css\/styles.css",
 		"oF": 3,
-		"oS": 0,
+		"oS": 1,
 		"rU": 0,
 		"sI": 0,
 		"sM": 0,

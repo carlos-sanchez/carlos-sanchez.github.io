@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="15px" viewBox="0 0 23 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>up-arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-25.0%" y="-46.9%" width="150.0%" height="197.9%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.22745098   0 0 0 0 0.305882353   0 0 0 0 0.380392157  0 0 0 0.9 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="up-arrow" filter="url(#filter-1)" transform="translate(2.000000, 3.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <path d="M12.125027,1.47048649 C10.7140541,0.0595135135 8.17443243,0.0595135135 6.76362162,1.47048649 L1.40221622,6.83189189 C0.837891892,7.39621622 0.837891892,8.24286486 1.40221622,8.80718919 C1.96654054,9.37151351 2.81318919,9.37151351 3.37751351,8.80718919 L8.73891892,3.44578378 C9.30324324,3.16362162 9.86756757,3.16362162 10.1498919,3.44578378 L15.5112973,8.80718919 C15.7934595,9.08935135 16.3577838,9.08935135 16.6399459,9.08935135 C16.9221081,9.08935135 17.4864324,8.80718919 17.4864324,8.80718919 C18.0507568,8.24286486 18.0507568,7.39621622 17.4864324,6.83189189 L12.125027,1.47048649 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

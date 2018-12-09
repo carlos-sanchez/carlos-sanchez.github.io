@@ -24,7 +24,6 @@
 
 <link rel="stylesheet" type="text/css" href="css/styles.css" />
 
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 
 <!-- For Facebook -->
@@ -48,8 +47,8 @@
 <![endif]-->
 
 
-
-<script src="js/scroll-fadeout/scroll-fadeout-min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/scripts-min.js"></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-10359362-24"></script>
@@ -68,7 +67,7 @@
 
 <body>
 
-  <div class="body-wrapper">
+  <div class="body-wrapper" name="top">
 
   <div class="header-bg"></div>
 
@@ -125,8 +124,8 @@
       <div class="container">
         <ul class="nav" id="navCategories">
           <li class="selected" id="categoryAll">All</li>
-          <li id="categoryCaseStudies">Case Studies</li>
           <li id="categorySideProjects">Side Projects</li>
+          <li id="categoryCaseStudies">Case Studies</li>
           <li id="categoryTalks">Talks</li>
           <!-- <li id="">Posts</li> -->
         </ul>
@@ -191,59 +190,32 @@
       </li>
 
 
-      <li class="project-list__item project-list__item--dark-bg project-list__item--ux-talk categoryTalks">
 
 
-        <div class="col col--left col6 project-list__item__info">
-          <h2 class="project-list__item__info__title">UX</h2>
-          <ul class="project-list__item__info__tags">
-            <li>#talk</li>
-          </ul>
-          <p class="text-shadow">
-This talk, which I have been giving at different acceleration programs for startups since 2015, tries to answer three questions: What is UX? Why should I care? Where do I get started? Using examples of entrepreneurs who deeply cared about their users despite not having formal training as designers, I try to convey the long-term importance of designing great user experiences.
-          </p>
-          <a class="project-list__item__info__read-more" title="Read More">Book this talk<span aria-hidden="true"> &rarr;</span></a>
-        </div>
-
-
-      </li>
-
-
-      <li class="project-list__item project-list__item--dark-bg project-list__item--validation-talk categoryTalks">
-
-
-        <div class="col col--right col6 project-list__item__info">
-          <h2 class="project-list__item__info__title">Validating big ideas with small solutions</h2>
-          <ul class="project-list__item__info__tags">
-            <li>#talk</li>
-          </ul>
-          <p class="text-shadow">
-            There is only one thing more dangerous than solving a problem wrong: solving the wrong problem. When resources are limited and one of our main goals is helping our business grow, as designers we must make sure that we are choosing the problems that are truly worth solving. In this talk we learn how to leave intuition aside to start validating our hypothesis in the fastest and cheapest ways. We also explore ways to spread this mindset throughout other teams in our company.
-          </p>
-          <a class="project-list__item__info__read-more" title="Read More">Book this talk<span aria-hidden="true"> &rarr;</span></a>
-        </div>
-
-
-      </li>
-
-
-
-      <li class="project-list__item project-list__item--dark-bg project-list__item--product-process categoryTalks">
+      <li class="project-list__item project-list__item--twitter-threads categorySideProjects">
 
         <div class="col col--left col6 project-list__item__info">
-          <h2 class="project-list__item__info__title">The Product Design Process at Ontruck</h2>
+          <h2 class="project-list__item__info__title">Twitter threads about design and technology</h2>
           <ul class="project-list__item__info__tags">
-            <li>#talk</li>
+            <li>#side-project</li>
           </ul>
-          <p class="text-shadow">
-While most startups have feature-based roadmaps, at Ontruck we work with problem-based roadmaps. Why? We don't build features for the sake of it. Only after we have fully understood the problems we aim to solve, we start thinking about solutions. In this talk we share how we do research, how we avoid falling in love with our solutions and how we prototype and test everything we design before we start building.
-          </p>
-          <a class="project-list__item__info__read-more" title="Read More">Book this talk<span aria-hidden="true"> &rarr;</span></a>
+          <p>A series of twitter threads in Spanish about design and technology.</p>
+          <ul class="bulleted-list">
+          	<li>The Ikea Effect</li>
+          	<li>The Tamagotchi</li>
+          	<li>Component Libraries and Masters of the Universe</li>
+          	<li>The 7 Mistakes that Killed the Pono</li>
+          	<li>Mental Models</li>
+          	<li>Bugs and Patches</li>
+          	<li>User Testing</li>
+          	<li>Company Culture</li>
+          </ul>
+          <a class="project-list__item__info__read-more" href="twitter-threads.html" title="Read More">Read threads<span aria-hidden="true"> &rarr;</span></a>
         </div>
 
+        <div class="project-list__item__bg-img project-list__item__bg-img--right project-list__item__bg-img--twitter-threads"></div>
 
       </li>
-
 
 
 
@@ -263,6 +235,68 @@ Doctor24 was born as a service that allowed users to talk to doctors online. The
 
 
       </li>
+
+
+
+      <li class="project-list__item project-list__item--dark-bg project-list__item--ux-talk categoryTalks">
+
+
+        <div class="col col--left col6 project-list__item__info">
+          <h2 class="project-list__item__info__title">UX</h2>
+          <ul class="project-list__item__info__tags">
+            <li>#talk</li>
+          </ul>
+          <p class="text-shadow">
+This talk, which I have been giving at different acceleration programs for startups since 2015, tries to answer three questions: What is UX? Why should I care? Where do I get started? Using examples of entrepreneurs who deeply cared about their users despite not having formal training as designers, I try to convey the long-term importance of designing great user experiences.
+          </p>
+          <a class="project-list__item__info__read-more" href="mailto:hi@carlossanchez.me" title="Read More">Book this talk<span aria-hidden="true"> &rarr;</span></a>
+        </div>
+
+
+      </li>
+
+
+      <li class="project-list__item project-list__item--dark-bg project-list__item--validation-talk categoryTalks">
+
+
+        <div class="col col--right col6 project-list__item__info">
+          <h2 class="project-list__item__info__title">Validating big ideas with small solutions</h2>
+          <ul class="project-list__item__info__tags">
+            <li>#talk</li>
+          </ul>
+          <p class="text-shadow">There is only one thing more dangerous than solving a problem wrong: solving the wrong problem. When resources are limited and one of our main goals is helping our business grow and scale, we must make sure that we are choosing the problems that are truly worth solving. In this talk we leave our intuition aside and we start looking for ways to validate our hypothesis with lean solutions. Then we explore how to to spread this mindset throughout other teams in our company.</p>
+          <a class="project-list__item__info__read-more" href="mailto:hi@carlossanchez.me" title="Read More">Book this talk<span aria-hidden="true"> &rarr;</span></a>
+        </div>
+
+
+      </li>
+
+
+
+      <li class="project-list__item project-list__item--dark-bg project-list__item--product-process categoryTalks">
+
+        <div class="col col--left col6 project-list__item__info">
+          <h2 class="project-list__item__info__title">The Product Design Process at Ontruck</h2>
+          <ul class="project-list__item__info__tags">
+            <li>#talk</li>
+          </ul>
+          <p class="text-shadow">
+While most startups have feature-based roadmaps, at Ontruck we work with problem-based roadmaps. Why? We don't build features for the sake of it. Only after we have fully understood the problems we aim to solve, we start thinking about solutions. In this talk we share how we do research, how we avoid falling in love with our solutions and how we prototype and test everything we design before we start building.
+          </p>
+          <a class="project-list__item__info__read-more" href="mailto:hi@carlossanchez.me" title="Read More">Book this talk<span aria-hidden="true"> &rarr;</span></a>
+        </div>
+
+
+      </li>
+
+
+
+
+
+
+
+
+
 
 
     </ul><!-- /project list -->
@@ -323,42 +357,9 @@ Doctor24 was born as a service that allowed users to talk to doctors online. The
 </div>
 
 
-<script>
-
-
-$(function(){
-
-  var selectedCategory = categoryAll;
-  var i=0;
-
-  $('#navCategories li').on('click', function() {
-
-    if ( $(this).hasClass('selected') ){
-      return 0; // currently selected artist has been clicked so do nothing
-    }else{
-      //updates navigation
-      $('#navCategories li.selected').removeClass('selected');
-      $(this).addClass('selected');
-
-      //filters items
-      selectedCategory= $(this).attr('id');
-
-      if( selectedCategory == 'categoryAll' ){
-        $('.project-list__item').fadeIn();
-      }else{
-        $('.project-list__item').not('.'+selectedCategory).hide();
-        $('.project-list__item.'+selectedCategory).fadeIn();
-      }
-
-
-    } // /else
-
-
-  });
-});
-
-</script>
-
+<a class="scroll-to-anchor back-to-top" id="backToTop" title="Back to top" href="#top">
+  <img src="img/up-arrow.svg" alt="up arrow">
+</a>
 
 
 
@@ -376,5 +377,4 @@ $(function(){
 </html>
 
 <!-- /nonessential resources -->
-<!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Sanchez" rel="stylesheet"> -->
 <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Roboto:400,400i,700,700i|Sanchez" rel="stylesheet">

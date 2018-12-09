@@ -10,4 +10,11 @@ if (width > 480) {
 	 }
 }
 
+
+if ($(window).scrollTop() >= 200) {
+ $("#backToTop").fadeIn("50");
+} else {
+ $("#backToTop").fadeOut("50");
+}
+
 });

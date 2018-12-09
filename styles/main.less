@@ -10,7 +10,7 @@
 	overflow: hidden;
 }
 
-@media screen and (max-width: @mobile-bp){
+@media screen and (max-width: @max-width){
 	.body-wrapper{
 		border-radius: 0;
 	}
@@ -186,7 +186,6 @@
 @media screen and (max-width: @mobile-bp){
 	.elevator-pitch{
 		position: relative;
-		top:40px;
 		width:100%;
 	}
 }
@@ -243,7 +242,7 @@
 }
 
 .project-list__item--bb8{
-	.gradient-diagonal(#d3d3d7, #f3f3f1);
+	.gradient-diagonal(#EDEFF4,#FAFAFC);
 }
 
 
@@ -282,6 +281,9 @@ background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox
 	background-position: center center;
 }
 
+.project-list__item--twitter-threads{
+	.gradient-diagonal(#EDEFF4,#FAFAFC);
+}
 
 @media screen and (min-width: @tablet-bp){
 	.project-list__item--ux-talk{
@@ -350,6 +352,13 @@ background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox
 	margin-bottom: 32px;
 }
 
+.project-list__item__bg-img--twitter-threads{
+	background-image: url(../img/projects/hilo-twitter.png);
+	background-size: cover;
+	background-position: top center;
+
+}
+
 
 
 @media screen and (min-width: @tablet-bp){
@@ -381,8 +390,20 @@ background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox
 	.project-list__item__bg-img--nes{
 		left: 5%;
 	}
+	.project-list__item__bg-img--twitter-threads{
+		background-size: contain;
+		background-position: center center;
+		right: 5%;
+	}
 }
 
+@media screen and (max-width: @mobile-bp){
+	.project-list__item__bg-img--twitter-threads{
+		width: 100%;
+		right: 0;
+		background-size: cover;
+	}
+}
 
 .project-list__item__info{
 	padding: 10% 10% 320px;
@@ -425,4 +446,16 @@ background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox
 	&:hover{
 		border-color: @black;
 	}
+}
+
+.back-to-top{
+	position: fixed;
+	bottom: 0px;
+	right: 0;
+	z-index: 1;
+	display: none;
+	width: 40px;
+	height:40px;
+	text-align: center;
+	line-height: 40px;
 }

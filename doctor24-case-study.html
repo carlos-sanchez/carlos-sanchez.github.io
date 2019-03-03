@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en-EN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<title>Carlos Sánchez › Doctor24 Case Study</title>
+
+<meta name="description" content="I am a Product and UX Designer based in Madrid"/>
+<meta name="author" content="Carlos Sánchez"/>
+<meta name="keywords" content="product ux design madrid ontruck"/>
+
+<!--Mobile viewport optimization h5bp.com/ad -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1"> <!--allows zoom -->
+
+<!--Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
+<meta http-equiv="cleartype" content="on">
+
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="apple-touch-icon" href="icon.png"/>
+<link rel="icon" href="icon.png"/>
+
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+
+
+<!--For Facebook -->
+<meta property="og:title" content="Doctor24 Case Study"/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" content="https://carlossanchez.me/carlos-sanchez-website.png"/>
+<meta property="og:url" content="https://carlossanchez.me"/>
+<meta property="og:site_name" content="Carlos Sánchez"/>
+<meta property="og:description" content="From MVP to Scheduled Calls"/>
+
+<!--for Twitter -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Doctor24 Case Study" />
+<meta name="twitter:description" content="From MVP to Scheduled Calls" />
+<meta name="twitter:image" content="https://carlossanchez.me/carlos-sanchez-website.png" />
+
+
+<!--For Google+ -->
+<!--<html itemscope itemtype="http://schema.org/Article"> -->
+<meta itemprop="name" content="Doctor24 Case Study">
+<meta itemprop="description" content="From MVP to Scheduled Calls">
+<meta itemprop="image" content="https://carlossanchez.me/carlos-sanchez-website.png">
+
+
+<!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/scripts-min.js"></script>
+
+
+<!--Global site tag (gtag.js) <li>Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-10359362-24"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-10359362-24');
+</script>
+
+
+</head>
+
+<body class="post-body">
+
+
+<div class="post-wrapper">
+  <a class="back-to-home" href="index.html">&larr; carlossanchez.me</a>
+
+  <h1>Doctor24 Case Study: From MVP to Scheduled Calls</h1>
+
+  <h2>The service</h2>
+
+  <p>Doctor24 was born as a service that allowed users to talk to doctors online. The initial idea was simple: log in and do a video call with one of our physicians online.</p>
+
+
+  <figure>
+    <img src='img/posts/doctor24/doctor24.png' alt='Doctor24' />
+
+  </figure>
+
+
+  <h2>Context</h2>
+
+  <p>Visiting a doctor takes time and effort. As a result, many people self-medicate or just wait until they feel better. But prevention is better (and in the long term cheaper) than cure, so we wondered what could we do to remove friction between patients and physicians. The main hypothesis behind Doctor24 was: people will seek medical advice more often if we allow them to easily connect with a doctor anytime, anywhere.</p>
+
+  <p>We set out to validate this hypothesis as fast as possible following a lean strategy. Our MVP was a web app that allowed patients to do unscheduled calls with doctors.</p>
+
+  <p>Why a web app? Because it was the fastest way of building the apps for both patients and doctors using the same technology.</p>
+
+  <p>Why unscheduled calls? Because scheduled calls are way more complex. More on that later.</p>
+
+  <p>With this MVP, we wanted to answer the following questions:</p>
+
+  <ul>
+    <li>Are users in Spain ready for telemedicine?</li>
+    <li>What percentage of medical problems can be solved with video calls?</li>
+    <li>What kind of medical problems will users try to solve with the service?</li>
+    <li>What do users prefer: talking to any doctor as soon as possible or choosing their doctor?</li>
+    <li>What is an acceptable waiting time for a patient?</li>
+    <li>Do we need our own team of doctors or will this work with freelance doctors?</li>
+    <li>Will users sign up before they need to make a call?</li>
+  </ul>
+
+  <h2>The MVP</h2>
+
+  <figure>
+    <img src='img/posts/doctor24/hangouts-error.jpg' alt='Google Hangouts Error Screen' />
+    <figcaption>Google Hangouts error</figcaption>
+  </figure>
+
+
+
+  <p>If you use services like Hangouts or Skype, you know that many things can go wrong during a video call. But when a video call is also a medical consultation, things get even more complex. Each call is a virtual visit with an input (all the information provided by the patient), the call itself, an output (the medical opinion or diagnosis and the treatment) and an associated cost. We could only guarantee a fast and stable internet connection on the side of the doctor so we had to deal with frequent interrupted calls. It didn't take us long to learn about the users expectations in these situations:</p>
+
+  <ul>
+  <li>Patients wanted to resume the call with the same doctor.</li>
+  <li>Patients didn't want to provide all the information about their problems again.</li>
+  <li>Doctors didn't want to rewrite the diagnosis or treatment if they had already done it.</li>
+  <li>Patients didn't want to see a failed call on their medical records, they just wanted to see the output of the consultation (a solution for their problem).</li>
+  </ul>
+
+  <p>The MVP didn't allow users to choose a doctor to talk to. All they could see was a "Talk to a doctor now" button. When a call was interrupted, there was no way to reconnect with the same doctor right away, but this wasn't a big problem in the beginning since most of the time there was only one physician online. If a call was interrupted and the user called again, chances were that the same doctor would answer.</p>
+
+  <figure>
+    <img src='img/posts/doctor24/doctor24-interruptions.png' alt='Doctor24 calls interruptions' />
+    <figcaption>Possible interruptions during an unscheduled call</figcaption>
+  </figure>
+
+
+
+  <p>If all doctors were busy, we displayed an estimated waiting time by the "Talk to a doctor now" button and moved the patients to a virtual waiting room until one of the doctors became available.</p>
+
+  <h2>Learnings from the pilot</h2>
+
+  <p>Through research we learned that doctor visits cost 330€/year per employee to companies in Spain and we saw an opportunity to offer Doctor24 as a B2B service that companies could offer as a benefit to the employees, saving time for them and money for the company. We partnered with a pharmaceutical company to run a three-month pilot, giving access to the service to all of their employees in Spain.</p>
+
+  <p>These are some of the things we learned from running the pilot:</p>
+
+  <ul>
+  <li>Users were good at guessing whether their medical problem could be solved with a video call or not. Our doctors were actually able to solve 83% of the medical problems patients presented.</li>
+  <li>Users were skeptical about the service until they tried it.</li>
+  <li>Users wanted to do follow up calls with the doctor they first talked to about their problem.</li>
+  <li>Recurrent users preferred talking to a doctor they already knew and trusted. At the same time, they loved the immediacy of pushing a button and connecting with a physician right away.</li>
+  </ul>
+
+  <p>The main open questions we had at the beginning were validated by the pilot; Doctor24 could solve real problems and our users found it useful. We were ready to start commercializing the service to validate the product/market fit while our product team focused on solving the problems detected during the pilot.</p>
+
+  <h2>The problem</h2>
+
+  <p>After the pilot it became clear that we would have to cover two different use cases:</p>
+
+  <ul>
+  <li>Connecting with a doctor right away, which was useful for first time users and users with emergencies.</li>
+  <li>Talking to *your* doctor, which was useful for follow up calls and recurrent users.</li>
+  </ul>
+
+  <p>The question for us was: how do we iterate the product to cover both use cases?</p>
+
+  <h2>The solution</h2>
+
+  <p>We decided to start working on Scheduled Calls to solve the main problem detected during the pilot. The idea was: if your doctor is available you can connect right away. If you doctor is not available, you can choose between talking to another physician or booking an appointment with your doctor. Scheduled Calls also opened the door to solve another problem mentioned earlier: reconnecting after a call is interrupted.</p>
+
+  <h2>The challenges</h2>
+
+  <p>The main reason why our MVP offered Unscheduled Calls only was that things get much more complex when you start thinking about Scheduled Calls. These are some of the things that you have to take into consideration:</p>
+
+  <ul>
+  <li>You need to establish medical shifts.</li>
+  <li>You have to confirm that doctors are actually online during their shift.</li>
+  <li>You need to define time slots.</li>
+  <li>You need to plan for overlapping appointments.</li>
+  <li>You need to display and remind appointments to both patients and doctors.</li>
+  <li>You have to consider appointment cancellations.</li>
+  <li>Even if an appointment is scheduled, the patient can't enter the virtual room until the doctor is available on the other side.</li>
+  </ul>
+
+  <p>Appointments overlapping was one of the hardest problems to crack. In order to schedule appointments you need to define time slots, but you can't just end a call if the conversation between between patient and doctor isn't over when they ran out of time. Our medical team made that point very clear.</p>
+
+  <p>During the call there was a timer that was only visible to the doctors. In calls that exceeded their scheduled time, doctors were informed if there was a patient waiting. With this information, doctors could decide between:</p>
+
+  <ul>
+  <li>Inviting the patient to book another call to continue the conversation later.</li>
+  <li>Wrapping up the call to talk to the next patient.</li>
+  <li>Continue talking to the patient knowing that nobody was waiting.</li>
+  </ul>
+
+  <figure>
+    <img src='img/posts/doctor24/doctor24-appointment-overlappings.png' alt='Doctor24 appointment overlappings' />
+    <figcaption>Possible appointment overlapping scenarios</figcaption>
+  </figure>
+
+
+  <p>We agreed with our medical team to start offering 15-minute slots and then measure whether that was enough, too much or too little. We also allowed users to book appointments with a doctor up to 2 minutes before the appointment. This was the way we provided users to talk to their doctor right away if he or she was available.</p>
+
+  <p>During appointments, users and doctors could easily reconnect if the call was interrupted, solving one of the most annoying problems from the MVP.</p>
+
+  <figure>
+    <img src='img/posts/doctor24/doctor24-scheduled-calls.png' alt='Doctor24 scheduled calls' />
+    <figcaption>Possible scenarios during a scheduled call</figcaption>
+  </figure>
+
+
+  <p>To continue offering the "Talk to a doctor now" service, we used all the non-booked time during a doctor's shift. This also allowed us to optimize the physicians' time.</p>
+
+  <figure>
+    <img src='img/posts/doctor24/doctor24-unscheduled-calls.png' alt='Doctor24 unscheduled calls' />
+    <figcaption>Possible scenarios during an unscheduled call</figcaption>
+  </figure>
+
+
+  <p>Unfortunately, sales were not taking off while we were working on Scheduled Calls. Whereas our users found Doctor24 incredibly useful, our clients (the companies) didn’t find the service valuable enough. As a result, the service was eventually discontinued in 2017. We will never know if Scheduled Calls would have made the service more appealing to companies.</p>
+
+
+
+  <a class="back-to-home" href="index.html">&larr; carlossanchez.me</a>
+
+
+</div>
+
+
+<div class="container">
+  <ul class="legal-links">
+    <li><a href="cookies-policy.html" target="_blank">Cookies Policy</a></li>
+  </ul>
+</div>
+
+
+<a class="scroll-to-anchor back-to-top" id="backToTop" title="Back to top" href="#top">
+  <img src="img/up-arrow.svg" alt="up arrow">
+</a>
+
+
+
+
+
+<!-- Begin Cookie Consent plugin by Silktide <li>http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"This website uses cookies to ensure you get the best experience. ","dismiss":"Got it!","learnMore":"More info","link":"cookies-policy.html","theme":"dark-bottom","target":"_blank"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+
+</body>
+</html>
+
+<!-- /nonessential resources -->
+<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Roboto:400,400i,700,700i|Sanchez" rel="stylesheet">

@@ -6,19 +6,18 @@
 .post-wrapper{
 	margin: 40px auto;
 	width: 90%;
-	max-width: 540px;
-
+	max-width: 600px;
 	h1,h2{
 		font-family: @display-font;
 		line-height: 1.2;
 	}
 	h1{
-		font-size: 2.5rem;
+		font-size: 2em;
 		margin-bottom: 1em;
 		color: @primary;
 	}
 	h2{
-		font-size: 2rem;
+		font-size: 1.5em;
 		margin: 3em 0 1em;
 	}
 	h1+h2{
@@ -53,5 +52,18 @@
 	}
 	p + .back-to-home{
 		margin-top: 4em;
+	}
+	p, ul, ol{
+		font-family: @serif-font;
+	}
+	.back-to-home{
+		font-size: 1rem;
+	}
+}
+
+@media screen and (min-width: @mobile-bp){
+	.post-wrapper{
+		font-size: 1.2rem;
+		line-height: 1.61;
 	}
 }

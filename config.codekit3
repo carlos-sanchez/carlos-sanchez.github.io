@@ -165,6 +165,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/img/posts/doctor24/hangouts-error.png": {
+		"ft": 32768,
+		"iS": 4919,
+		"oA": 0,
+		"oAP": "/img/posts/doctor24/hangouts-error.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/img/projects/bb8-render.png": {
 		"ft": 32768,
 		"iS": 234643,

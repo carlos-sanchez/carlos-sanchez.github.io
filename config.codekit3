@@ -121,6 +121,50 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/img/posts/doctor24/doctor24-interruptions.png": {
+		"ft": 32768,
+		"iS": 157040,
+		"oA": 0,
+		"oAP": "/img/posts/doctor24/doctor24-interruptions.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/posts/doctor24/doctor24-scheduled-calls.png": {
+		"ft": 32768,
+		"iS": 480856,
+		"oA": 0,
+		"oAP": "/img/posts/doctor24/doctor24-scheduled-calls.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/posts/doctor24/doctor24-unscheduled-calls.png": {
+		"ft": 32768,
+		"iS": 102251,
+		"oA": 0,
+		"oAP": "/img/posts/doctor24/doctor24-unscheduled-calls.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/posts/doctor24/doctor24.png": {
+		"ft": 32768,
+		"iS": 291860,
+		"oA": 0,
+		"oAP": "/img/posts/doctor24/doctor24.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/img/projects/bb8-render.png": {
 		"ft": 32768,
 		"iS": 234643,

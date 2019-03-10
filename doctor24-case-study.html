@@ -27,24 +27,24 @@
 
 
 <!--For Facebook -->
-<meta property="og:title" content="Doctor24 Case Study"/>
+<meta property="og:title" content="Doctor24: From MVP to Scheduled Calls"/>
 <meta property="og:type" content="website"/>
 <meta property="og:image" content="https://carlossanchez.me/img/posts/doctor24/doctor24.png"/>
 <meta property="og:url" content="https://carlossanchez.me/doctor24-case-study.html"/>
 <meta property="og:site_name" content="Carlos Sánchez"/>
-<meta property="og:description" content="From MVP to Scheduled Calls"/>
+<meta property="og:description" content="Doctor24 Case Study"/>
 
 <!--for Twitter -->
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Doctor24 Case Study" />
-<meta name="twitter:description" content="From MVP to Scheduled Calls" />
+<meta name="twitter:title" content="Doctor24: From MVP to Scheduled Calls" />
+<meta name="twitter:description" content="Doctor24 Case Study" />
 <meta name="twitter:image" content="https://carlossanchez.me/img/posts/doctor24/doctor24.png" />
 
 
 <!--For Google+ -->
 <!--<html itemscope itemtype="http://schema.org/Article"> -->
-<meta itemprop="name" content="Doctor24 Case Study">
-<meta itemprop="description" content="From MVP to Scheduled Calls">
+<meta itemprop="name" content="Doctor24: From MVP to Scheduled Calls">
+<meta itemprop="description" content="Doctor24 Case Study">
 <meta itemprop="image" content="https://carlossanchez.me/img/posts/doctor24/doctor24.png">
 
 
@@ -78,7 +78,7 @@
 
   <h1>Doctor24 Case Study: From MVP to Scheduled Calls</h1>
 
-  <h2>The service</h2>
+  <h2>Context</h2>
 
   <p>Doctor24 was born as a service that allowed users to talk to doctors online. The initial idea was simple: log in and do a video call with one of our physicians online.</p>
 
@@ -89,11 +89,11 @@
   </figure>
 
 
-  <h2>Context</h2>
-
   <p>Visiting a doctor takes time and effort. As a result, many people self-medicate or just wait until they feel better. But prevention is better (and in the long term cheaper) than cure, so we wondered what could we do to remove friction between patients and physicians. The main hypothesis behind Doctor24 was: people will seek medical advice more often if we allow them to easily connect with a doctor anytime, anywhere.</p>
 
-  <p>We set out to validate this hypothesis as fast as possible following a lean strategy. Our MVP was a web app that allowed patients to do unscheduled calls with primary care physicians.</p>
+  <h2>The MVP</h2>
+
+  <p>When you are building medical products, you can't just move fast and break things. You are dealing with highly sensitive data and you have to make sure you are complying with the law in the countries where you operate. With this in mind, we set out to validate our main hypothesis as fast as possible following a lean strategy. Our MVP was a law-compliant web app that allowed patients to do unscheduled calls with primary care physicians.</p>
 
   <p><strong>Why a web app?</strong> Because it was the fastest way of building the apps for both patients and doctors using the same technology.</p>
 
@@ -109,11 +109,10 @@
     <li>What kind of medical problems will users try to solve with the service?</li>
     <li>What do users prefer: talking to any doctor as soon as possible or choosing their doctor?</li>
     <li>What is an acceptable waiting time for a patient?</li>
-    <li>Do we need our own team of doctors or will this work with freelance doctors?</li>
     <li>Will users sign up before they need to make a call?</li>
   </ul>
 
-  <h2>The MVP</h2>
+  <h2>MVP challenges</h2>
 
   <figure>
     <img src='img/posts/doctor24/hangouts-error.png' alt='Google Hangouts Error Screen' />
@@ -142,9 +141,9 @@
 
   <p>If all doctors were busy, we displayed an estimated waiting time by the "Talk to a doctor now" button and moved the patients to a virtual waiting room until one of the doctors became available.</p>
 
-  <h2>Learnings from the pilot</h2>
+  <h2>The pilot</h2>
 
-  <p>Through research we learned that doctor visits cost 330€/year per employee to companies in Spain and we saw an opportunity to commercialize Doctor24 as a B2B service that companies could offer as a benefit to the employees, saving time for them and money for the company. We partnered with a pharmaceutical company to run a three-month pilot, giving access to the service to all of their employees in Spain.</p>
+  <p>Doctor visits cost 330€/year per employee to companies in Spain so we saw an opportunity to commercialize Doctor24 as a B2B service that companies could offer as a benefit, saving time to their employees and money to the company. We partnered with a pharmaceutical company to run a three-month pilot, giving access to the service to all of their employees in Spain.</p>
 
   <p>These are some of the things we learned from running the pilot:</p>
 
@@ -156,24 +155,21 @@
   <li>If the video and the audio didn't work, users were fine using the integrated chat. This was interesting and it made us realize that we could have probably started with a much simpler MVP, offering a chat-based service. </li>
   </ul>
 
-  <p>By the time the pilot was over, the main questions we had when the project started had been answered; Doctor24 could solve real problems and our users found it useful. We were ready to start commercializing the service to validate the product/market fit while our product team focused on solving the problems detected during the pilot. </p>
+  <p>By the time the pilot was over, the main questions we had when the project started had been answered; Doctor24 could solve real problems and patients found it useful. We were ready to start commercializing the service to validate the product/market fit while our product team focused on solving the problems detected during the pilot. </p>
 
-  <h2>The problem</h2>
-
-  <p>After the pilot it became clear that we would have to cover two different use cases:</p>
+  <p>At this point it was decided to iterate the product in a direction that could allow us cover two different use cases:</p>
 
   <ul>
   <li>Connecting with a doctor right away, which was useful for first time users and users with emergencies.</li>
   <li>Talking to  your doctor, which was useful for follow up calls and recurrent users.</li>
   </ul>
 
-  <p>The question for us was: how do we iterate the product to cover both use cases?</p>
 
-  <h2>The solution</h2>
+  <h2>Scheduled Calls</h2>
 
-  <p>We decided to start working on Scheduled Calls to solve the main problem detected during the pilot. The idea was: if your doctor is available you can connect right away. If you doctor is not available, you can choose between talking to another physician or booking an appointment with your doctor. Scheduled Calls also opened the door to solve another problem mentioned earlier: reconnecting after a call is interrupted.</p>
+  <p>After the pilot we decided to start working on Scheduled Calls to try to solve the main problems detected so far. The idea was: if your doctor is available you can connect right away. If your doctor is not available, you can choose between talking to another physician or booking an appointment with your doctor. Scheduled Calls also opened the door to solve another problem mentioned earlier: reconnecting after a call is interrupted.</p>
 
-  <h2>The challenges</h2>
+  <h2>Scheduled Calls challenges</h2>
 
   <p>The main reason why our MVP offered Unscheduled Calls only was that things get much more complex when you start thinking about Scheduled Calls. These are some of the things that you have to take into consideration:</p>
 
@@ -187,9 +183,11 @@
   <li>Even if an appointment is scheduled, the patient can't enter the virtual room until the doctor is available on the other side.</li>
   </ul>
 
-  <p>Appointments overlapping was one of the hardest problems to crack. In order to schedule appointments you need to define time slots, but you can't just end a call if the conversation between between patient and doctor isn't over when they ran out of time. Our medical team made that point very clear.</p>
+  <h2>The solution</h2>
 
-  <p>During the call there was a timer that was only visible to the doctors. In calls that exceeded their scheduled time, doctors were informed if there was a patient waiting. With this information, doctors could decide between:</p>
+  <p>Appointments overlapping was one of the hardest problems to crack. In order to schedule appointments you need to define time slots, but you can't just end a call if the conversation between patient and doctor isn't over when they ran out of time. Our medical team made that point very clear.</p>
+
+  <p>During the call there was a timer that was only visible to the doctors. In calls that exceeded their scheduled time, doctors were informed whether there was a patient waiting or not. With this information, doctors could decide among:</p>
 
   <ul>
   <li>Inviting the patient to book another call to continue the conversation later.</li>
@@ -221,10 +219,11 @@
   </figure>
 
   <h2>The results</h2>
-  <p>Unfortunately, sales were not taking off while we were working on Scheduled Calls. Whereas our users found Doctor24 quite useful, our clients (the companies) didn’t find the service valuable enough. We considered alternative pricing models and pivoting to B2C, but in the end the service was discontinued.</p>
-  <p>The results from the user testings showed we were making the service even more useful for patients, but we will never know if Scheduled Calls would have made the service more appealing to companies.</p>
+  <p>Our solution for Scheduled Calls seemed to solve the main problems detected with the MVP and even though the complexity of the product had increased, user testing showed that both patients and doctors still found it quite intuitive. On top of this, solving the problem of reconnecting interrupted calls made the service much more scalable.</p>
 
+  <p>Unfortunately, sales were not taking off while we were working on Scheduled Calls. Whereas our users found Doctor24 useful, our clients (the companies) didn’t find the service valuable enough. We considered alternative pricing models and pivoting to B2C, but in the end the service was discontinued. We will never know if Scheduled Calls would have made the service more appealing to companies.</p>
 
+  <p>We didn't find product/market fit, but everyone involved in this project saw the potential of services like Doctor24. We strongly believe that in the near future, patients and doctors will only meet in the same physical space when strictly necessary. Focusing on prevention and early detection of health issues is in the interest of everyone; those providing the medical services will save a lot of money and patients will live healthier lives.</p>
 
   <a class="back-to-home" href="index.html">&larr; carlossanchez.me</a>
 

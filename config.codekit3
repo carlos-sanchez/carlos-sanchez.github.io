@@ -198,15 +198,15 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/img/projects/doctor24.jpg": {
-		"ft": 16384,
-		"iS": 123939,
-		"jF": 0,
+	"/img/projects/doctor24.png": {
+		"ft": 32768,
+		"iS": 249943,
 		"oA": 0,
-		"oAP": "/img/projects/doctor24.jpg",
+		"oAP": "/img/projects/doctor24.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"/img/projects/hilo-twitter.png": {
@@ -242,37 +242,26 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/img/projects/product-process-talk.jpg": {
+	"/img/projects/post-communication.jpg": {
 		"ft": 16384,
-		"iS": 261021,
+		"iS": 354154,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/img/projects/product-process-talk.jpg",
+		"oAP": "/img/projects/post-communication.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
-	"/img/projects/ux-talk.jpg": {
-		"ft": 16384,
-		"iS": 116039,
-		"jF": 0,
+	"/img/projects/post-hiring.png": {
+		"ft": 32768,
+		"iS": 110772,
 		"oA": 0,
-		"oAP": "/img/projects/ux-talk.jpg",
+		"oAP": "/img/projects/post-hiring.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
-	"/img/projects/validation-talk.jpg": {
-		"ft": 16384,
-		"iS": 338418,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/projects/validation-talk.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"/img/up-arrow.svg": {

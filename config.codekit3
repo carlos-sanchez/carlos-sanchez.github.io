@@ -286,6 +286,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/img/projects/ontruck.png": {
+		"ft": 32768,
+		"iS": 365077,
+		"oA": 0,
+		"oAP": "/img/projects/ontruck.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/img/projects/post-communication.jpg": {
 		"ft": 16384,
 		"iS": 354154,

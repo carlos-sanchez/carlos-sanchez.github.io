@@ -286,28 +286,6 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/img/projects/ontruck-tricky-times.png": {
-		"ft": 32768,
-		"iS": 365077,
-		"oA": 0,
-		"oAP": "/img/projects/ontruck-tricky-times.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/img/projects/post-communication.jpg": {
-		"ft": 16384,
-		"iS": 354154,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/projects/post-communication.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
 	"/img/projects/post-hiring.png": {
 		"ft": 32768,
 		"iS": 110772,

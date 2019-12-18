@@ -168,17 +168,19 @@ A few months after the alert system had been deployed, the impossible and tricky
 Out of the two problems, this was the easy one, so I decided to tackle it first. As mentioned above, the only validation rule that affected the 'Dropoff from' input was this one: 'Dropoff from' can't be earlier than 'Pickup from'. This wasn't a problem if the time windows were big enough. For example, considering the driving time between Getafe and Toledo is around 45 min, these times were tricky, but not impossible:
 </p>
 
-<p>
-Pickup in Getafe from 9:00 am to 11:00 am and Dropoff in Toledo from 9:00 to 11:00.
-</p>
+<div class="callout">
+<span class="callout__icon">✅</span>
+<div class="callout__text">Pickup in Getafe from 9:00 am to 11:00 am and Dropoff in Toledo from 9:00 to 11:00.</div>
+</div>
 
 <p>
 The problem was when the difference between the 'Pickup from' time and the 'Dropoff to' time was shorter than the driving time. For example:
 </p>
 
-<p>
-Pickup in Getafe from 9:30 am to 9:30 am and Dropoff in Toledo from 10:00 to 10:00.
-</p>
+<div class="callout">
+  <span class="callout__icon">⚠️</span>
+  <div class="callout__text">Pickup in Getafe from 9:30 am to 9:30 am and Dropoff in Toledo from 10:00 to 10:00.</div>
+</div>
 
 <p>
 We knew the average loading time for a shipment depending on the amount of pallets. We also could calculate driving distances between two stops. With all that information we introduced a new validation rule: <strong>Minimum 'Dropoff from' time = 'Pickup from' time + X + Y</strong>, where X is the optimistic loading time for the amount of pallets in the shipment and Y the optimistic driving time for the distance between the stops.

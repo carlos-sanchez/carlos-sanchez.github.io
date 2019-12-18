@@ -193,8 +193,8 @@
 		"oA": 0,
 		"oAP": "/img/posts/ontruck-tricky-times/impossible-times.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -215,8 +215,8 @@
 		"oA": 0,
 		"oAP": "/img/posts/ontruck-tricky-times/tricky-times.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},

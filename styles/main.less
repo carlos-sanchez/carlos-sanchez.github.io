@@ -267,10 +267,6 @@
 }
 
 
-.project-list__item--bb8{
-	.gradient-diagonal(#EDEFF4,#FAFAFC);
-}
-
 
 .project-list__item--bbl{
 	// .gradient-diagonal(#1a3d59,#206293);
@@ -313,7 +309,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox
 }
 
 
-.project-list__item--twitter-threads{
+.project-list__item--gray-gradient-bg{
 	.gradient-diagonal(#EDEFF4,#FAFAFC);
 }
 
@@ -345,12 +341,20 @@ background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox
 
 .project-list__item__inline-img{
 	position: absolute;
-	height: 280px;
-	height: 280px;
-	bottom: 30px;
-	left: 50%;
-	margin-left: -140px;
+	height: 260px;
+	height: 260px;
+	bottom: 40px;
 	.transition(all 0.2s ease);
+}
+
+.project-list__item__inline-img--left{
+	left: 50%;
+	margin-left: -130px;
+}
+
+.project-list__item__inline-img--right{
+	right: 50%;
+	margin-right: -130px;
 }
 
 .project-list__item__bg-img{
@@ -407,9 +411,14 @@ background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox
 	.project-list__item__inline-img{
 		height: 300px;
 		width: 300px;
-		left: 200px;
 		top: 180px;
-		margin-left: 0;
+		margin: 0;
+	}
+	.project-list__item__inline-img--left{
+		left: 16%;
+	}
+	.project-list__item__inline-img--right{
+		right: 16%;
 	}
 	.project-list__item__bg-img{
 		top: 0;

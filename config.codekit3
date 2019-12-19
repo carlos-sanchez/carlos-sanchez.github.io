@@ -440,12 +440,12 @@
 		"opt": 1,
 		"q": 100
 		},
-	"/img/posts/night-sky/torrespaña-full-moon-©chocotuits.jpg": {
+	"/img/posts/night-sky/torrespana-full-moon-©chocotuits.jpg": {
 		"ft": 16384,
 		"iS": 599414,
 		"jF": 0,
 		"oA": 1,
-		"oAP": "/img/posts/night-sky/torrespaña-full-moon-©chocotuits.jpg",
+		"oAP": "/img/posts/night-sky/torrespana-full-moon-©chocotuits.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -548,6 +548,17 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
+		"q": 100
+		},
+	"/img/projects/night-sky.jpg": {
+		"ft": 16384,
+		"iS": 275187,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/projects/night-sky.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"/img/projects/ontruck-tricky-times.png": {

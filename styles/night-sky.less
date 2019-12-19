@@ -83,30 +83,41 @@
 }
 
 .night-sky-photo-wrapper__caption{
-  float: left;
   color: @night-sky-purple;
-  background: @night-sky-blue;
-  position: relative;
-  top:-32px;
-  left: 32px;
-  padding: 0 8px;
-  line-height: 32px;
-  max-width: 85%;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  text-align: center;
   height: 32px;
 }
 
 .night-sky-photo-wrapper__cta{
-  float: right;
+  text-align: center;
+  display: block;
   text-decoration: none;
-  background: @night-sky-blue;
-  position: relative;
-  top:-32px;
-  right: 32px;
-  padding: 0 8px;
-  line-height: 32px;
+  height: 32px;
 }
+
+@media screen and (min-width: @mobile-bp){
+  .night-sky-photo-wrapper__caption{
+    float: left;
+    position: relative;
+    top:-32px;
+    left: 32px;
+    padding: 0 8px;
+    background: @night-sky-blue;
+    line-height: 32px;
+    max-width: 85%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .night-sky-photo-wrapper__cta{
+    float: right;
+    background: @night-sky-blue;
+    position: relative;
+    top:-32px;
+    right: 32px;
+    padding: 0 8px;
+  }
+}
+
 
 .night-sky-footer{
   text-align: center;

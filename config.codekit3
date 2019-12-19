@@ -242,6 +242,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/img/posts/night-sky/esa-cebreros-©chocotuits.jpg": {
+		"ft": 16384,
+		"iS": 716233,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/posts/night-sky/esa-cebreros-©chocotuits.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/img/posts/night-sky/fuerteventura-cofete-©chocotuits.jpg": {
 		"ft": 16384,
 		"iS": 1436913,
@@ -330,6 +341,17 @@
 		"opt": 1,
 		"q": 100
 		},
+	"/img/posts/night-sky/namibia-epupa-car-milkyway-©chocotuits.jpg": {
+		"ft": 16384,
+		"iS": 1008376,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/posts/night-sky/namibia-epupa-car-milkyway-©chocotuits.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/img/posts/night-sky/namibia-palm-trees-milkyway-©chocotuits.jpg": {
 		"ft": 16384,
 		"iS": 19454201,
@@ -394,6 +416,17 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
+		"q": 100
+		},
+	"/img/posts/night-sky/new-york-manhattan-full-moon-©chocotuits.jpg": {
+		"ft": 16384,
+		"iS": 223745,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/posts/night-sky/new-york-manhattan-full-moon-©chocotuits.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"/img/posts/night-sky/night-sky-header.jpg": {
@@ -799,24 +832,6 @@
 		"sI": 0,
 		"sU": 0
 		},
-	"/styles/night-sky.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/styles/night-sky-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/styles/night-sky.css.map": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/styles/night-sky.css.map",
-		"oF": 0
-		},
 	"/styles/night-sky.less": {
 		"aP": 0,
 		"bl": 0,
@@ -827,7 +842,7 @@
 		"mS": 0,
 		"oA": 1,
 		"oAP": "/styles/night-sky.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0,
 		"rwU": 0,
 		"sI": 0,

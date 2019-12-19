@@ -104,7 +104,7 @@
 </ul>
 
 <p>
-  We knew we were taking risks giving so much flexibility to shippers, but we preferred to launch a simple solution and learn from users' behavior rather than over engineering a solution based on the assumption that shippers would provide problematic pickup/dropoff times.
+  We knew we were taking risks giving so much flexibility to shippers, but we preferred to launch a simple solution and learn from users' behavior rather than over-engineering a solution based on the assumption that shippers would provide problematic pickup/dropoff times.
 </p>
 
 <h2>Problem</h2>
@@ -115,7 +115,7 @@ Soon after we launched, our drivers started complaining that sometimes it was ha
 
 <ul>
     <li><strong>Impossible times</strong>: times that are virtually impossible to meet. For example, pickup in Toledo at  10 am and dropoff in Getafe at 10:30 am (driving time between Getafe and Toledo with no traffic is 45 min).</li>
-    <li><strong>Tricky times:</strong> times that are technically possible but tricky. For example, pickup in Toledo from 10 am to 3 pm, and dropoff in Getafe a 3 pm. If the pickup happens at 3 pm, the driver will be late to the dropoff for sure.</li>
+    <li><strong>Tricky times:</strong> times that are technically possible but tricky. For example, pickup in Toledo from 10 am to 3 pm, and dropoff in Getafe at 3 pm. If the pickup happens at 3 pm, the driver will be late to the dropoff for sure.</li>
 </ul>
 
 <h2>Initial approach</h2>
@@ -127,15 +127,15 @@ Soon after we launched, our drivers started complaining that sometimes it was ha
 <h2>Related problem</h2>
 
 <p>
-  In the early days, our Fleet team manually reviewed all next-day shipments to anticipate and solve any potential problems. This included verifying addresses, checking if the driver had overlapping jobs, making sure the assigned vehicle was right for the cargo and checking if pickup/dropoff times were doable. It is needless to say that this process didn't scale very well. The problem got bigger as the number of shipments we handled grew, so it was eventually prioritize by the Product Manager in my squad. I was in charge of finding a solution.
+  In the early days, our Fleet team manually reviewed all next-day shipments to anticipate and solve any potential problems. This included verifying addresses, checking if the driver had overlapping jobs, making sure the assigned vehicle was right for the cargo and checking if pickup/dropoff times were doable. It is needless to say that this process didn't scale very well. The problem got bigger as the number of shipments we handled grew, so it was eventually prioritized by the Product Manager in my squad. I was in charge of finding a solution.
   </p>
 
 <p>
-After doing some research to better understand why next-day jobs needed to be verified and the consequences of not doing it, it became clear that the problem could be tackled from two different angles: we could try to decrease the amount of problematic shipments by doing things on the shippers' side (e.g.: stricter form validation) or we could help our Fleet team focus on problematic shipments only.
+After doing some research to better understand why next-day jobs needed to be verified and the consequences of not doing it, it became clear that the problem could be tackled from two different angles: we could try to decrease the amount of problematic shipments by doing things on the shippers' side (e.g. stricter form validation) or we could help our Fleet team focus on problematic shipments only.
 </p>
 
 <p>
-No matter what we did on the shippers's side, we were going to keep receiving problematic shipments, so we decided to tackle the problem from the other end. I went to the product engineers in my squad to discuss the possibility of automatically identifying any of the problems that our Fleet team searched for every single day. I learned that we could automatically identify problems such as suspicious addresses, weird cargo characteristics, or even scan the special requirements field searching for specific words that we knew could mean trouble. This is when I saw an opportunity to tackle the unrealistic pickup/dropoff times problem, which was in our problems backlog.
+No matter what we did on the shippers' side, we were going to keep receiving problematic shipments, so we decided to tackle the problem from the other end. I went to the product engineers in my squad to discuss the possibility of automatically identifying any of the problems that our Fleet team searched for every single day. I learned that we could automatically identify problems such as suspicious addresses, weird cargo characteristics, or even scan the special requirements field searching for specific words that we knew could mean trouble. This is when I saw an opportunity to tackle the unrealistic pickup/dropoff times problem, which was in our problems backlog.
 </p>
 
 <p>
@@ -202,7 +202,7 @@ Today, drivers only make it late to one stop when the times are tight and the lo
 <h2>Solving the tricky times problem</h2>
 
 <p>
-After the solution for the impossible times problem was designed, I moved to the tricky times problem. I started by exploring the obvious solution, which was introducing new validation rules just like we just did for the impossible times problem, but I soon realized that they would have a negative impact on the user experience. We couldn't set a minimum 'Dropoff to' time based on the 'Dropoff from' time because because pickup/dropoff points often provided shippers specific appointment times. That means that a dropoff window of zero minutes was perfectly valid.
+After the solution for the impossible times problem was designed, I moved to the tricky times problem. I started by exploring the obvious solution, which was introducing new validation rules just like we just did for the impossible times problem, but I soon realized that they would have a negative impact on the user experience. We couldn't set a minimum 'Dropoff to' time based on the 'Dropoff from' time because pickup/dropoff points often provided shippers specific appointment times. That means that a dropoff window of zero minutes was perfectly valid.
 </p>
 
 <p>

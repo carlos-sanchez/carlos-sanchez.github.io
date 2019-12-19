@@ -72,22 +72,36 @@
 
 .night-sky-figure__img-wrapper{
   border: 1px solid rgba(255,255,255,.3);
-  padding: 32px;
+  border-radius: 32px;
+  padding: 32px 32px 30px;
   margin-bottom: 1rem;
   pointer-events: none;
   img{
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.8);
+    border-radius: 16px;
   }
 }
 
 .night-sky-photo-wrapper__caption{
   float: left;
   color: @night-sky-purple;
+  background: @night-sky-blue;
+  position: relative;
+  top:-32px;
+  left: 32px;
+  padding: 0 8px;
+  line-height: 32px;
 }
 
 .night-sky-photo-wrapper__cta{
   float: right;
   text-decoration: none;
+  background: @night-sky-blue;
+  position: relative;
+  top:-32px;
+  right: 32px;
+  padding: 0 8px;
+  line-height: 32px;
 }
 
 .night-sky-footer{

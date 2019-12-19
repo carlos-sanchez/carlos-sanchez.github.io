@@ -1,0 +1,95 @@
+.night-sky-body{
+  color: #fff;
+  background: #0D1424;
+}
+
+.night-sky-header{
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.night-sky-header-links{
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: .9rem;
+  line-height: 24px;
+  a{
+    color: @night-sky-purple;
+    text-decoration: none;
+    vertical-align: top;
+    margin-left: 8px;
+    .text-shadow;
+    svg{
+      path{
+        fill: @night-sky-purple;
+      }
+    }
+  }
+}
+
+.night-sky-header__gradient{
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgb(13,20,36);
+  background: linear-gradient(0deg, rgba(13,20,36,1) 0%, rgba(13,20,36,0) 100%);
+}
+
+.night-sky-wrapper{
+  padding: 5rem 0;
+  h1{
+    font-family: @night-sky-font;
+    color: @night-sky-yellow;
+    text-align: center;
+    font-size: 4rem;
+  }
+  h2{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+    letter-spacing: .03em;
+    font-weight: 300;
+  }
+  h3{
+    color: @night-sky-purple;
+    text-align: center;
+    margin-bottom: 4rem;
+    line-height: 16px;
+  }
+}
+
+.night-sky-figure{
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto 8rem;
+}
+
+.night-sky-figure__img-wrapper{
+  border: 1px solid rgba(255,255,255,.3);
+  padding: 32px;
+  margin-bottom: 1rem;
+  pointer-events: none;
+  img{
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.8);
+  }
+}
+
+.night-sky-photo-wrapper__caption{
+  float: left;
+  color: @night-sky-purple;
+}
+
+.night-sky-photo-wrapper__cta{
+  float: right;
+  text-decoration: none;
+}
+
+.night-sky-footer{
+  text-align: center;
+}

@@ -608,6 +608,7 @@ a {
   text-align: center;
   font-size: 1rem;
   margin: 0 0 4rem;
+  overflow: hidden;
 }
 @media screen and (min-width: 800px) {
   .creators-list {
@@ -634,11 +635,15 @@ a {
   text-align: center;
   color: #ffcccc;
   line-height: 1.4em;
-  width: 140%;
-  margin-left: -20%;
 }
 .creator-info a {
   color: #ffcccc;
+}
+@media screen and (min-width: 800px) {
+  .creator-info {
+    width: 140%;
+    margin-left: -20%;
+  }
 }
 .creator-info__name {
   font-family: 'PT Serif', serif;

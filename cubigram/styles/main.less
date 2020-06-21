@@ -140,6 +140,7 @@
     text-align: center;
     font-size: 1rem;
     margin: 0 0 4rem;
+    overflow: hidden;
   }
 }
 
@@ -171,12 +172,18 @@
   text-align: center;
   color: @terra-100;
   line-height: 1.4em;
-  width: 140%;
-  margin-left: -20%;
   a{
     color: @terra-100;
   }
 }
+
+@media screen and (min-width: @breakpoint-tablet) {
+  .creator-info{
+    width: 140%;
+    margin-left: -20%;
+  }
+}
+
 
 .creator-info__name{
   font-family: @serif-font;

@@ -1,0 +1,40 @@
+
+
+@display-font: 'Montserrat', sans-serif;
+@sans-serif-font: 'PT Sans', sans-serif;
+@serif-font: 'PT Serif', serif;
+
+@terra-100: #ffcccc;
+@terra-300: #b6637c;
+@terra-500: #7c3c5a;
+@terra-700: #441e3d;
+@accent: #ff8889;
+
+@background: @accent;
+@gradient-light: @accent;
+@gradient-dark: @terra-500;
+
+@breakpoint-tablet: 800px;
+@grid-width: 1170px;
+
+@col-width: 7.079%; //82.83px;
+@gutter-width: 1.36%; // 16px;
+@gutter-width-half: (@gutter-width / 2); // 8px;
+
+@col-1: @col-width;
+@col-2: @col-width*2 + @gutter-width;
+@col-3: @col-width*3 + @gutter-width*2;
+@col-4: @col-width*4 + @gutter-width*3;
+@col-5: @col-width*5 + @gutter-width*4;
+@col-6: @col-width*6 + @gutter-width*5;
+@col-6: @col-width*7 + @gutter-width*6;
+@col-8: @col-width*8 + @gutter-width*7;
+@col-8: @col-width*9 + @gutter-width*8;
+@col-10: @col-width*10 + @gutter-width*9;
+@col-11: @col-width*11 + @gutter-width*10;
+@col-12: @col-width*12 + @gutter-width*11;
+
+@col-1-gutter: @col-width+@gutter-width;
+@col-1-double-gutter: @col-width+(@gutter-width*2);
+
+@col-1-double-gutter-half: (@col-1-double-gutter / 2);

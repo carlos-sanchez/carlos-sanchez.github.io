@@ -528,6 +528,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/img/projects/cubigram.png": {
+		"ft": 32768,
+		"iS": 33799,
+		"oA": 0,
+		"oAP": "/img/projects/cubigram.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/img/projects/doctor24.png": {
 		"ft": 32768,
 		"iS": 131030,
@@ -537,6 +548,17 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
+		"q": 100
+		},
+	"/img/projects/guia-fotografica-nueva-york-chocotuits.jpeg": {
+		"ft": 16384,
+		"iS": 549783,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/projects/guia-fotografica-nueva-york-chocotuits.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/img/projects/hilo-twitter.png": {

@@ -135,7 +135,7 @@ After doing some research to better understand why next-day jobs needed to be ve
 </p>
 
 <p>
-No matter what we did on the shippers' side, we were going to keep receiving problematic shipments, so we decided to tackle the problem from the other end. I went to the product engineers in my squad to discuss the possibility of automatically identifying any of the problems that our Fleet team searched for every single day. I learned that we could automatically identify problems such as suspicious addresses, weird cargo characteristics, or even scan the special requirements field searching for specific words that we knew could mean trouble. This is when I saw an opportunity to tackle the unrealistic pickup/dropoff times problem, which was in our problems backlog.
+No matter what we did on the shippers' side, we were going to keep receiving problematic shipments, so we decided to tackle the problem from the other end. I went to the product engineers in my squad to discuss the possibility of automatically identifying any of the problems that our Fleet team searched for every single day. I learned that we could automatically identify problems such as suspicious addresses, weird cargo characteristics, or even scan the special requirements field searching for specific words that we knew could mean trouble. This is when I saw an opportunity to tackle the tricky times problem, which was in our problems backlog.
 </p>
 
 <p>
@@ -155,11 +155,11 @@ We decided to ship a solution that alerted about four types of problems, with th
 <h2>Back to the original problem</h2>
 
 <p>
-The alert system solution improved the productivity of our Fleet team. It also allowed us to react earlier to problematic shipments, including those with pickup/dropoff times problems. For the impossible times problem, our agents could reach out to the shipper asking them to modify the times. For the tricky times problem, our agents could reach out to the drivers asking them to plan their route making sure they could make it on time to all the stops. But we were still getting shipments with impossible and tricky times.
+The alert system solution improved the productivity of our Fleet team. It also allowed us to react earlier to problematic shipments, including those with tricky times. Detecting impossible times required calculating driving times between stops, but tricky times followed a pattern that was easy to indentify: no gap between pickup-to and dropoff-from, combined with a time range of zero minutes for the dropoff. When the system detected this cases, our agents were able to reach out to drivers in advance asking them to plan their route making sure they could make it on time to all the stops.
 </p>
 
 <p>
-A few months after the alert system had been deployed, the impossible and tricky times problem was prioritized by the Product Manager in my squad so I set out to find a solution.
+The impossible times problem was still unsolved and although most tricky times cases were detected in time, reaching out to drivers every time was a lot of work for our Fleet team. Because of this, a few months after the alert system had been deployed, the impossible and tricky times problem was prioritized by the Product Manager in my squad and I set out to find a solution.
 </p>
 
 <h2>Solving the impossible times problem</h2>

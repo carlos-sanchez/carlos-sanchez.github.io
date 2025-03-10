@@ -121,6 +121,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/img/posts/doctor24/doctor24 copy.png": {
+		"ft": 32768,
+		"iS": 653887,
+		"oA": 0,
+		"oAP": "/img/posts/doctor24/doctor24 copy.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/img/posts/doctor24/doctor24-appointment-overlappings.png": {
 		"ft": 32768,
 		"iS": 6157741,
@@ -185,292 +196,6 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
-		},
-	"/img/posts/night-sky/56-leonard-street-©chocotuits.jpg": {
-		"ft": 16384,
-		"iS": 452539,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/posts/night-sky/56-leonard-street-©chocotuits.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/posts/night-sky/caliz-la-pedriza-star-trail-©chocotuits.jpg": {
-		"ft": 16384,
-		"iS": 4074124,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/posts/night-sky/caliz-la-pedriza-star-trail-©chocotuits.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
-	"/img/posts/night-sky/caudilla-castle-milkyway-©chocotuits.jpg": {
-		"ft": 16384,
-		"iS": 1495833,
-		"jF": 0,
-		"oA": 1,
-		"oAP": "/img/posts/night-sky/caudilla-castle-milkyway-©chocotuits.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/posts/night-sky/caudilla-milkyway-©chocotuits.jpg": {
-		"ft": 16384,
-		"iS": 2679116,
-		"jF": 0,
-		"oA": 1,
-		"oAP": "/img/posts/night-sky/caudilla-milkyway-©chocotuits.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/posts/night-sky/dolmen-la-giganta-ronda-milyway-©chocotuits.jpg": {
-		"ft": 16384,
-		"iS": 3109018,
-		"jF": 0,
-		"oA": 1,
-		"oAP": "/img/posts/night-sky/dolmen-la-giganta-ronda-milyway-©chocotuits.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/posts/night-sky/el-torcal-©chocotuits.jpg": {
-		"ft": 16384,
-		"iS": 5874314,
-		"jF": 0,
-		"oA": 1,
-		"oAP": "/img/posts/night-sky/el-torcal-©chocotuits.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/posts/night-sky/esa-cebreros-©chocotuits.jpg": {
-		"ft": 16384,
-		"iS": 716233,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/posts/night-sky/esa-cebreros-©chocotuits.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/posts/night-sky/fuerteventura-cofete-©chocotuits.jpg": {
-		"ft": 16384,
-		"iS": 1436913,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/posts/night-sky/fuerteventura-cofete-©chocotuits.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
-	"/img/posts/night-sky/hiruela-milkyway-©chocotuits.jpg": {
-		"ft": 16384,
-		"iS": 15815266,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/posts/night-sky/hiruela-milkyway-©chocotuits.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
-	"/img/posts/night-sky/hontoba-milky-way-©chocotuits.jpg": {
-		"ft": 16384,
-		"iS": 3410306,
-		"jF": 0,
-		"oA": 1,
-		"oAP": "/img/posts/night-sky/hontoba-milky-way-©chocotuits.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/posts/night-sky/la-maliciosa-dinosaur-©chocotuits.jpg": {
-		"ft": 16384,
-		"iS": 13526700,
-		"jF": 0,
-		"oA": 1,
-		"oAP": "/img/posts/night-sky/la-maliciosa-dinosaur-©chocotuits.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/posts/night-sky/madrid-four-towers-full-moon-©chocotuits.jpg": {
-		"ft": 16384,
-		"iS": 9131129,
-		"jF": 0,
-		"oA": 1,
-		"oAP": "/img/posts/night-sky/madrid-four-towers-full-moon-©chocotuits.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/posts/night-sky/malaga-full-moon-©chocotuits.jpg": {
-		"ft": 16384,
-		"iS": 1603707,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/posts/night-sky/malaga-full-moon-©chocotuits.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
-	"/img/posts/night-sky/moscow-red-square-full-moon-©chocotuits.jpg": {
-		"ft": 16384,
-		"iS": 798682,
-		"jF": 0,
-		"oA": 1,
-		"oAP": "/img/posts/night-sky/moscow-red-square-full-moon-©chocotuits.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/posts/night-sky/namibia-deadvlei-milkyway-©chocotuits.jpg": {
-		"ft": 16384,
-		"iS": 3200888,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/posts/night-sky/namibia-deadvlei-milkyway-©chocotuits.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
-	"/img/posts/night-sky/namibia-epupa-car-milkyway-©chocotuits.jpg": {
-		"ft": 16384,
-		"iS": 1008376,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/posts/night-sky/namibia-epupa-car-milkyway-©chocotuits.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/posts/night-sky/namibia-palm-trees-milkyway-©chocotuits.jpg": {
-		"ft": 16384,
-		"iS": 19454201,
-		"jF": 0,
-		"oA": 1,
-		"oAP": "/img/posts/night-sky/namibia-palm-trees-milkyway-©chocotuits.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/posts/night-sky/namibia-spitzkoppe-milkyway-©chocotuits.jpg": {
-		"ft": 16384,
-		"iS": 3268361,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/posts/night-sky/namibia-spitzkoppe-milkyway-©chocotuits.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
-	"/img/posts/night-sky/namibia-stars-factory-milkyway-©chocotuits.jpg": {
-		"ft": 16384,
-		"iS": 3308590,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/posts/night-sky/namibia-stars-factory-milkyway-©chocotuits.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
-	"/img/posts/night-sky/new-york-empire-state-full-moon-aligned-©chocotuits.jpg": {
-		"ft": 16384,
-		"iS": 11405012,
-		"jF": 0,
-		"oA": 1,
-		"oAP": "/img/posts/night-sky/new-york-empire-state-full-moon-aligned-©chocotuits.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/posts/night-sky/new-york-empire-state-full-moon-©chocotuits.jpg": {
-		"ft": 16384,
-		"iS": 14954988,
-		"jF": 0,
-		"oA": 1,
-		"oAP": "/img/posts/night-sky/new-york-empire-state-full-moon-©chocotuits.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/posts/night-sky/new-york-liberty-statue-full-moon-©chocotuits.jpg": {
-		"ft": 16384,
-		"iS": 1076760,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/posts/night-sky/new-york-liberty-statue-full-moon-©chocotuits.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
-	"/img/posts/night-sky/new-york-manhattan-full-moon-©chocotuits.jpg": {
-		"ft": 16384,
-		"iS": 223745,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/posts/night-sky/new-york-manhattan-full-moon-©chocotuits.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/posts/night-sky/night-sky-header.jpg": {
-		"ft": 16384,
-		"iS": 0,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/posts/night-sky/night-sky-header.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
-	"/img/posts/night-sky/one-world-trade-center-©chocotuits.jpg": {
-		"ft": 16384,
-		"iS": 397924,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/posts/night-sky/one-world-trade-center-©chocotuits.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/img/posts/night-sky/torrespana-full-moon-©chocotuits.jpg": {
-		"ft": 16384,
-		"iS": 599414,
-		"jF": 0,
-		"oA": 1,
-		"oAP": "/img/posts/night-sky/torrespana-full-moon-©chocotuits.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
 		"q": 100
 		},
 	"/img/posts/ontruck-tricky-times/impossible-times.png": {
@@ -550,28 +275,6 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/img/projects/guia-fotografica-nueva-york-chocotuits.png": {
-		"ft": 32768,
-		"iS": 280730,
-		"oA": 0,
-		"oAP": "/img/projects/guia-fotografica-nueva-york-chocotuits.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/img/projects/hilo-twitter.png": {
-		"ft": 32768,
-		"iS": 150845,
-		"oA": 0,
-		"oAP": "/img/projects/hilo-twitter.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
 	"/img/projects/nes-bg.jpg": {
 		"ft": 16384,
 		"iS": 166016,
@@ -592,17 +295,6 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
-		},
-	"/img/projects/night-sky.jpg": {
-		"ft": 16384,
-		"iS": 275187,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/img/projects/night-sky.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
 		"q": 100
 		},
 	"/img/projects/ontruck-tricky-times.png": {
@@ -632,6 +324,17 @@
 		"iS": 110772,
 		"oA": 0,
 		"oAP": "/img/projects/post-hiring.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/projects/saferlayer.png": {
+		"ft": 32768,
+		"iS": 359276,
+		"oA": 0,
+		"oAP": "/img/projects/saferlayer.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -699,22 +402,6 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
-		},
-	"/night-sky.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/night-sky.html",
-		"oF": 0
-		},
-	"/ontruck-tricky-times-case-study-highlighted.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/ontruck-tricky-times-case-study-highlighted.html",
-		"oF": 0
 		},
 	"/ontruck-tricky-times-case-study.html": {
 		"cB": 0,

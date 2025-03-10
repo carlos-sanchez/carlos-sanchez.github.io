@@ -80,151 +80,127 @@
 
   <h2>Context</h2>
 
-  <p>Doctor24 was born as a service that allowed users to talk to doctors online. The initial idea was simple: log in and do a video call with one of our physicians online.</p>
-
+  <p>Doctor24 began as a simple telemedicine service, connecting users with doctors via online video calls. The concept was straightforward: log in, click, and consult a physician from anywhere.</p>
 
   <figure>
-    <img src='img/posts/doctor24/doctor24.png' alt='Doctor24' />
-
+      <img src='img/posts/doctor24/doctor24.png' alt='Doctor24' />
   </figure>
 
-
-  <p>Visiting a doctor takes time and effort. As a result, many people self-medicate or just wait until they feel better. But prevention is better (and in the long term cheaper) than cure, so we wondered what could we do to remove friction between patients and physicians. The main hypothesis behind Doctor24 was: people will seek medical advice more often if we allow them to easily connect with a doctor anytime, anywhere.</p>
+  <p>Traditional doctor visits demand time and effort, often leading people to self-medicate or delay care. Yet, prevention beats cure—both for health and cost. We asked: how can we bridge the gap between patients and doctors? Our hypothesis: if connecting with a doctor is effortless and instant, people will seek medical advice more often.</p>
 
   <h2>The MVP</h2>
 
-  <p>When you are building medical products, you can't just move fast and break things. You are dealing with highly sensitive data and you have to make sure you are complying with the law in the countries where you operate. With this in mind, we set out to validate our main hypothesis as fast as possible following a lean strategy. Our MVP was a law-compliant web app that allowed patients to do unscheduled calls with primary care physicians.</p>
+  <p>In healthcare, you can’t rush and risk errors—sensitive data and legal compliance are non-negotiable. To test our hypothesis quickly yet safely, we built a lean, law-compliant web app for unscheduled video calls with primary care physicians.</p>
 
-  <p><strong>Why a web app?</strong> Because it was the fastest way of building the apps for both patients and doctors using the same technology.</p>
+  <p><strong>Why a web app?</strong> It was the fastest way to create a unified platform for patients and doctors.</p>
 
-  <p><strong>Why unscheduled calls?</strong> Because scheduled calls are way more complex. More on that later.</p>
+  <p><strong>Why unscheduled calls?</strong> Scheduling adds layers of complexity—more on that later.</p>
 
-  <p><strong>Why primary care physicians?</strong> Because that way we could solve a high percentage of relatively simple medical cases with a small team of physicians.</p>
+  <p><strong>Why primary care physicians?</strong> A small team could address most common medical issues efficiently.</p>
 
-  <p>With this MVP, we wanted to answer the following questions:</p>
+  <p>The MVP aimed to answer key questions:</p>
 
   <ul>
-    <li>Are users in Spain ready for telemedicine?</li>
-    <li>What percentage of medical problems can be solved with video calls?</li>
-    <li>What kind of medical problems will users try to solve with the service?</li>
-    <li>What do users prefer: talking to any doctor as soon as possible or choosing their doctor?</li>
-    <li>What is an acceptable waiting time for a patient?</li>
-    <li>Will users sign up before they need to make a call?</li>
+      <li>Are Spaniards ready for telemedicine?</li>
+      <li>What share of medical issues can video calls resolve?</li>
+      <li>What problems will users bring to the service?</li>
+      <li>Do users prioritize speed or doctor choice?</li>
+      <li>What’s an acceptable wait time?</li>
+      <li>Will users sign up proactively or only when sick?</li>
   </ul>
 
-  <h2>MVP challenges</h2>
+  <h2>MVP Challenges</h2>
 
   <figure>
-    <img src='img/posts/doctor24/hangouts-error.png' alt='Google Hangouts Error Screen' />
-    <figcaption>Google Hangouts error</figcaption>
+      <img src='img/posts/doctor24/hangouts-error.png' alt='Google Hangouts Error Screen' />
+      <figcaption>Google Hangouts error</figcaption>
   </figure>
 
-
-
-  <p>If you use services like Hangouts or Skype, you know that many things can go wrong during a video call. But when a video call is also a medical consultation, things get even more complex. Each call is a virtual visit with an input (all the information provided by the patient), the call itself, an output (the medical opinion or diagnosis and the treatment) and an associated cost. We could only guarantee a fast and stable internet connection on the side of the doctor so we had to deal with frequent interrupted calls. It didn't take us long to learn about the users expectations in these situations:</p>
+  <p>Video calls on platforms like Hangouts or Skype are prone to glitches. Add a medical consultation—complete with patient input, diagnosis, treatment, and billing—and complexity soars. We controlled the doctors’ internet stability, but patient-side disruptions were common. Here’s what we learned about user expectations:</p>
 
   <ul>
-  <li>Patients wanted to resume the call with the same doctor.</li>
-  <li>Patients didn't want to provide all the information about their medical problem again.</li>
-  <li>Doctors didn't want to rewrite the diagnosis or treatment if they had already done it.</li>
-  <li>Patients didn't want to see a failed call on their medical records, they just wanted to see the output of the consultation (a solution for their problem).</li>
+      <li>Patients wanted to resume calls with the same doctor.</li>
+      <li>They hated repeating their medical history.</li>
+      <li>Doctors dreaded redoing diagnoses or prescriptions.</li>
+      <li>Failed calls shouldn’t clutter medical records—patients just wanted solutions.</li>
   </ul>
 
-  <p>The MVP didn't allow users to choose a doctor to talk to. All they could see was a "Talk to a doctor now" button. When a call was interrupted, there was no way to reconnect with the same doctor right away, but this wasn't a big problem in the beginning since most of the time there was only one physician online. If a call was interrupted and the user called again, chances were that the same doctor would answer.</p>
+  <p>The MVP offered no doctor selection—just a “Talk to a doctor now” button. Interrupted calls couldn’t reconnect instantly, but with often just one doctor online, patients usually got the same physician on retry. When all doctors were busy, we showed an estimated wait time and queued patients in a virtual waiting room.</p>
 
   <figure>
-    <img src='img/posts/doctor24/doctor24-interruptions.png' alt='Doctor24 calls interruptions' />
-    <figcaption>Possible interruptions during an unscheduled call</figcaption>
+      <img src='img/posts/doctor24/doctor24-interruptions.png' alt='Doctor24 calls interruptions' />
+      <figcaption>Possible interruptions during an unscheduled call</figcaption>
   </figure>
 
+  <h2>The Pilot</h2>
 
-
-  <p>If all doctors were busy, we displayed an estimated waiting time by the "Talk to a doctor now" button and moved the patients to a virtual waiting room until one of the doctors became available.</p>
-
-  <h2>The pilot</h2>
-
-  <p>Doctor visits cost 330€/year per employee to companies in Spain so we saw an opportunity to commercialize Doctor24 as a B2B service that companies could offer as a benefit, saving time to their employees and money to the company. We partnered with a pharmaceutical company to run a three-month pilot, giving access to the service to all of their employees in Spain.</p>
-
-  <p>These are some of the things we learned from running the pilot:</p>
+  <p>In Spain, doctor visits cost companies €330 per employee annually. We pitched Doctor24 as a B2B perk—saving employees time and employers money. A three-month pilot with a pharmaceutical company gave all their Spanish staff access. Key findings emerged:</p>
 
   <ul>
-  <li>Users were good at guessing whether their medical problem could be solved with a video call or not. Our doctors were actually able to solve 83% of the medical problems patients presented.</li>
-  <li>Users were skeptical about the service until they tried it.</li>
-  <li>Users wanted to do follow up calls with the doctor they first talked to about their problem.</li>
-  <li>Recurrent users preferred talking to a doctor they already knew and trusted. At the same time, they loved the immediacy of pushing a button and connecting with a physician right away.</li>
-  <li>If the video and the audio didn't work, users were fine using the integrated chat. This was interesting and it made us realize that we could have probably started with a much simpler MVP, offering a chat-based service. </li>
+      <li>Users accurately judged which issues suited video calls—doctors resolved 83% of cases.</li>
+      <li>Skepticism faded after the first try.</li>
+      <li>Follow-ups with the same doctor were in demand.</li>
+      <li>Recurrent users valued familiarity but loved instant access too.</li>
+      <li>Chat worked as a fallback when video failed—hinting a simpler MVP might’ve sufficed.</li>
   </ul>
 
-  <p>By the time the pilot was over, the main questions we had when the project started had been answered; Doctor24 could solve real problems and patients found it useful. We were ready to start commercializing the service to validate the product/market fit while our product team focused on solving the problems detected during the pilot. </p>
-
-  <p>At this point it was decided to iterate the product in a direction that could allow us cover two different use cases:</p>
+  <p>The pilot confirmed Doctor24’s value: it solved real problems, and patients embraced it. Next, we’d commercialize to test product/market fit while addressing pilot feedback. We pivoted to support two use cases:</p>
 
   <ul>
-  <li>Connecting with a doctor right away, which was useful for first time users and users with emergencies.</li>
-  <li>Talking to  your doctor, which was useful for follow up calls and recurrent users.</li>
+      <li>Instant doctor access for emergencies and new users.</li>
+      <li>Follow-ups with a preferred doctor for recurring patients.</li>
   </ul>
-
 
   <h2>Scheduled Calls</h2>
 
-  <p>After the pilot we decided to start working on Scheduled Calls to try to solve the main problems detected so far. The idea was: if your doctor is available you can connect right away. If your doctor is not available, you can choose between talking to another physician or booking an appointment with your doctor. Scheduled Calls also opened the door to solve another problem mentioned earlier: reconnecting after a call is interrupted.</p>
+  <p>Post-pilot, we tackled scheduled calls to fix MVP flaws. The plan: connect instantly if your doctor’s free; otherwise, pick another physician or book a slot. This also solved reconnection woes after dropped calls.</p>
 
-  <h2>Scheduled Calls challenges</h2>
+  <h2>Scheduled Calls Challenges</h2>
 
-  <p>The main reason why our MVP offered Unscheduled Calls only was that things get much more complex when you start thinking about Scheduled Calls. These are some of the things that you have to take into consideration:</p>
-
-  <ul>
-  <li>You need to establish medical shifts.</li>
-  <li>You have to confirm that doctors are actually online during their shift.</li>
-  <li>You need to define time slots.</li>
-  <li>You need to plan for overlapping appointments.</li>
-  <li>You need to display and remind appointments to both patients and doctors.</li>
-  <li>You have to consider appointment cancellations.</li>
-  <li>Even if an appointment is scheduled, the patient can't enter the virtual room until the doctor is available on the other side.</li>
-  </ul>
-
-  <h2>The solution</h2>
-
-  <p>Appointments overlapping was one of the hardest problems to crack. In order to schedule appointments you need to define time slots, but you can't just end a call if the conversation between patient and doctor isn't over when they ran out of time. Our medical team made that point very clear.</p>
-
-  <p>During the call there was a timer that was only visible to the doctors. In calls that exceeded their scheduled time, doctors were informed whether there was a patient waiting or not. With this information, doctors could decide among:</p>
+  <p>Unscheduled calls kept the MVP simple—scheduling upends that. Consider:</p>
 
   <ul>
-  <li>Inviting the patient to book another call to continue the conversation later.</li>
-  <li>Wrapping up the call to talk to the next patient.</li>
-  <li>Continue talking to the patient knowing that nobody was waiting.</li>
+      <li>Setting medical shifts.</li>
+      <li>Ensuring doctors log in on time.</li>
+      <li>Defining time slots.</li>
+      <li>Managing overlaps.</li>
+      <li>Tracking and reminding about appointments.</li>
+      <li>Handling cancellations.</li>
+      <li>Delaying virtual room access until the doctor’s ready.</li>
+  </ul>
+
+  <h2>The Solution</h2>
+
+  <p>Overlapping appointments proved tricky. Fixed slots clashed with fluid consultations—doctors couldn’t cut off patients mid-conversation. A doctor-only timer showed if another patient waited, letting them choose:</p>
+
+  <ul>
+      <li>Schedule a follow-up.</li>
+      <li>Wrap up for the next patient.</li>
+      <li>Continue if no one’s waiting.</li>
   </ul>
 
   <figure>
-    <img src='img/posts/doctor24/doctor24-appointment-overlappings.png' alt='Doctor24 appointment overlappings' />
-    <figcaption>Possible appointment overlapping scenarios</figcaption>
+      <img src='img/posts/doctor24/doctor24-appointment-overlappings.png' alt='Doctor24 appointment overlappings' />
+      <figcaption>Possible appointment overlapping scenarios</figcaption>
   </figure>
 
-
-  <p>We agreed with our medical team to start offering 15-minute slots and then measure whether that was enough, too much or too little. We also allowed users to book appointments with a doctor up to 2 minutes before the appointment. This was the way we provided users to talk to their doctor right away if he or she was available.</p>
-
-  <p>During appointments, users and doctors could easily reconnect if the call was interrupted, solving one of the most annoying problems from the MVP.</p>
+  <p>We started with 15-minute slots—adjustable based on data—and allowed bookings up to two minutes before a session. Interrupted calls? Easy reconnection. For “Talk to a doctor now,” we reserved unbooked slots, ensuring at least one doctor was always available unscheduled, while others handled appointments. This flexed for full- and part-time physicians.</p>
 
   <figure>
-    <img src='img/posts/doctor24/doctor24-scheduled-calls.png' alt='Doctor24 scheduled calls' />
-    <figcaption>Possible scenarios during a scheduled call</figcaption>
+      <img src='img/posts/doctor24/doctor24-scheduled-calls.png' alt='Doctor24 scheduled calls' />
+      <figcaption>Possible scenarios during a scheduled call</figcaption>
   </figure>
-
-
-  <p>To continue offering the "Talk to a doctor now" service, we used all the non-booked time during the shifts of some of our physicians. During service hours there was at least one doctor available for calls without appointment. Other doctors would only connect if they had appointments previously booked. This also gave us flexibility to work with both full-time and part-time physicians.</p>
 
   <figure>
-    <img src='img/posts/doctor24/doctor24-unscheduled-calls.png' alt='Doctor24 unscheduled calls' />
-    <figcaption>Possible scenarios during an unscheduled call</figcaption>
+      <img src='img/posts/doctor24/doctor24-unscheduled-calls.png' alt='Doctor24 unscheduled calls' />
+      <figcaption>Possible scenarios during an unscheduled call</figcaption>
   </figure>
 
-  <h2>The results</h2>
-  <p>Our solution for Scheduled Calls seemed to solve the main problems detected with the MVP and even though the complexity of the product had increased, user testing showed that both patients and doctors still found it quite intuitive. On top of this, solving the problem of reconnecting interrupted calls made the service much more scalable.</p>
+  <h2>The Results</h2>
 
-  <p>Unfortunately, sales were not taking off while we were working on Scheduled Calls. Whereas our users found Doctor24 useful, our clients (the companies) didn’t find the service valuable enough. We considered alternative pricing models and pivoting to B2C, but in the end the service was discontinued. We will never know if Scheduled Calls would have made the service more appealing to companies.</p>
+  <p>Scheduled calls fixed MVP hiccups—reconnections included—while keeping the platform intuitive, despite added complexity. Scalability soared. But sales lagged. Users loved Doctor24; companies didn’t see enough value. We explored new pricing and a B2C pivot, but the service shut down. Would scheduled calls have won over businesses? We’ll never know.</p>
 
-  <p>We didn't find product/market fit, but everyone involved in this project saw the potential of services like Doctor24. We strongly believe that in the near future, patients and doctors will only meet in the same physical space when strictly necessary. Focusing on prevention and early detection of health issues is in the interest of everyone; those providing the medical services will save a lot of money and patients will live healthier lives.</p>
-
+  <p>Product/market fit eluded us, yet Doctor24’s potential shone. Telemedicine’s future—where physical visits are rare, and prevention rules—feels inevitable. It’s cost-effective for providers and life-enhancing for patients.</p>
   <a class="back-to-home" href="index.html">&larr; carlossanchez.me</a>
 
 

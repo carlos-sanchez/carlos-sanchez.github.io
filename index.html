@@ -1,74 +1,91 @@
-<!doctype html>
-<html lang="en-EN">
+<!DOCTYPE html>
+<html lang="en-US">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- Core Character Set and Compatibility -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>Carlos Sánchez › Product Leader</title>
+    <!-- Basic Metadata -->
+    <title>Carlos Sánchez › Product Leader</title>
+    <meta name="description" content="Product Leader with a background in design and engineering">
+    <meta name="author" content="Carlos Sánchez">
+    <meta name="keywords" content="product ux design">
+    <meta name="robots" content="index, follow"> <!-- Added for SEO -->
 
-<meta name="description" content="Product Leader with a background in design and engineering"/>
-<meta name="author" content="Carlos Sánchez"/>
-<meta name="keywords" content="product ux design"/>
+    <!-- Viewport and Mobile Optimization -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta http-equiv="cleartype" content="on">
 
-<!-- Mobile viewport optimization h5bp.com/ad -->
-<meta name="HandheldFriendly" content="True">
-<meta name="MobileOptimized" content="320">
-<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- allows zoom -->
+    <!-- Favicons and Icons -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Added modern favicon sizes -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest"> <!-- Added for PWA support -->
 
-<!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
-<meta http-equiv="cleartype" content="on">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!-- Added preload for faster loading -->
+    <link rel="preload" href="css/styles.css" as="style">
 
-<link rel="shortcut icon" href="favicon.ico" />
-<link rel="apple-touch-icon" href="icon.png"/>
-<link rel="icon" href="icon.png"/>
+    <!-- Open Graph (Facebook) -->
+    <meta property="og:title" content="Carlos Sánchez › Product Leader">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://carlossanchez.me/carlos-sanchez-website.png">
+    <meta property="og:url" content="https://carlossanchez.me">
+    <meta property="og:site_name" content="Carlos Sánchez">
+    <meta property="og:description" content="Product Leader with a background in design and engineering">
+    <!-- Added recommended OG tags -->
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_US">
 
-<link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image"> <!-- Updated to large image -->
+    <meta name="twitter:title" content="Carlos Sánchez › Product Leader">
+    <meta name="twitter:description" content="Product Leader with a background in design and engineering">
+    <meta name="twitter:image" content="https://carlossanchez.me/carlos-sanchez-website.png">
+    <!-- Added optional Twitter tags -->
+    <meta name="twitter:site" content="@yourusername"> <!-- Add your Twitter handle -->
+    <meta name="twitter:creator" content="@yourusername"> <!-- Add your Twitter handle -->
 
+    <!-- Schema.org (Google+) -->
+    <meta itemprop="name" content="Carlos Sánchez › Product Leader">
+    <meta itemprop="description" content="Product Leader with a background in design and engineering">
+    <meta itemprop="image" content="https://carlossanchez.me/carlos-sanchez-website.png">
 
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://ajax.googleapis.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
 
-<!-- For Facebook -->
-<meta property="og:title" content="Carlos Sánchez › Product Leader"/>
-<meta property="og:type" content="website"/>
-<meta property="og:image" content="https://carlossanchez.me/carlos-sanchez-website.png"/>
-<meta property="og:url" content="https://carlossanchez.me"/>
-<meta property="og:site_name" content="Carlos Sánchez"/>
-<meta property="og:description" content="Product Leader with a background in design and engineering City"/>
+    <!-- Performance Optimizations -->
+    <link rel="dns-prefetch" href="https://ajax.googleapis.com">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
 
-<!-- for Twitter -->
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Carlos Sánchez › Product Leader" />
-<meta name="twitter:description" content="Product Leader with a background in design and engineering" />
-<meta name="twitter:image" content="https://carlossanchez.me/carlos-sanchez-website.png" />
+    <!-- Scripts -->
+    <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
+    <script src="js/scripts-min.js" defer></script>
 
-<!-- For Google+ -->
-<!-- <html itemscope itemtype="http://schema.org/Article"> -->
-<meta itemprop="name" content="Carlos Sánchez › Product Leader">
-<meta itemprop="description" content="Product Leader with a background in design and engineering">
-<meta itemprop="image" content="https://carlossanchez.me/carlos-sanchez-website.png">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-10359362-24"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-10359362-24', {
+            'anonymize_ip': true // Added for GDPR compliance
+        });
+    </script>
 
-
-
-<!--[if lt IE 9]>
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-
-
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="js/scripts-min.js"></script>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-10359362-24"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-10359362-24');
-</script>
-
-
-
-
+    <!-- Preload important resources (adjust paths as needed) -->
+    <!-- <link rel="preload" href="/path-to-important-font.woff2" as="font" type="font/woff2" crossorigin> -->
 </head>
 
 <body>
@@ -123,8 +140,7 @@
 
 				<h1 id="elevatorPitch" class="elevator-pitch">
           <span>Hola.</span>
-          I am a hands-on Product Leader with a strong background in design and engineering. Currently, I lead the Product Team at Real Madrid, where we develop digital products for over 600 million fans worldwide.
-
+          I am a hands-on Product Leader with a strong background in design and engineering. I currently lead the Product Team at Real Madrid, where we deliver digital experiences to over 600 million fans worldwide.
         </h1>
 
 

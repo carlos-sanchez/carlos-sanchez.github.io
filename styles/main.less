@@ -474,13 +474,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox
 	background-size: cover;
 }
 
-.project-list__item__bg-img--guia-ny{
-	background-image: url(../img/projects/guia-fotografica-nueva-york-chocotuits.png);
-	background-size: contain;
-	background-size: 60%;
-	background-position: top center;
-	border-radius: 0 !important;
-}
+
 
 .project-list__item__bg-img--nes{
 	background-image: url(../img/projects/nes-mini.png);
@@ -489,16 +483,29 @@ background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox
 	margin-bottom: 32px;
 }
 
-.project-list__item__bg-img--twitter-threads{
-	background-image: url(../img/projects/hilo-twitter.png);
-	background-size: cover;
-	background-position: top center;
+
+.project-list__item__inline-img--pono{
+	float: right;
+	width: 45%;
+	right: 5%;
+	position: relative;
+	margin-top: 5%;
+}
+
+@media screen and (max-width: @tablet-bp){
+	.project-list__item__inline-img--pono{
+		position: absolute;
+		bottom: -40px;
+		left: 50%;
+		margin-left: -200px;
+		width: 400px;
+	}
 }
 
 
 
-
 @media screen and (min-width: @tablet-bp){
+
 	.project-list__item__inline-img{
 		height: 300px;
 		width: 300px;
@@ -531,6 +538,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox
 	.project-list__item__bg-img--screenshot.project-list__item__bg-img--left{
 		border-radius: 0 @grid-unit 0 0;
 	}
+
 	.project-list__item__bg-img--bb8{
 		left: 5%;
 		top: 5%;

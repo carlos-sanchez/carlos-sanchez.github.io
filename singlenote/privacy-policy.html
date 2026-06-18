@@ -9,133 +9,37 @@
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    :root {
-      --brand: #FF774E;
-      --text: #111827;
-      --muted: #6B7280;
-      --border: #E5E7EB;
-      --bg: #FFFFFF;
-      --surface: #F9FAFB;
-    }
-
-    body {
-      font-family: 'Inter', system-ui, sans-serif;
-      font-size: 16px;
-      line-height: 1.7;
-      color: var(--text);
-      background: var(--bg);
-      padding: 0 20px;
-    }
-
-    header {
-      border-bottom: 1px solid var(--border);
-      padding: 32px 0 24px;
-      margin-bottom: 40px;
-    }
-
-    .wordmark {
-      font-family: 'Instrument Serif', Georgia, serif;
-      font-size: 22px;
-      color: var(--brand);
-      text-decoration: none;
-      display: inline-block;
-      margin-bottom: 20px;
-    }
-
-    h1 {
-      font-family: 'Instrument Serif', Georgia, serif;
-      font-size: clamp(28px, 5vw, 40px);
-      font-weight: 400;
-      line-height: 1.2;
-      color: var(--text);
-    }
-
-    .updated {
-      margin-top: 8px;
-      font-size: 14px;
-      color: var(--muted);
-    }
-
-    main {
-      max-width: 680px;
-      margin: 0 auto;
-      padding-bottom: 80px;
-    }
-
-    section {
-      margin-bottom: 36px;
-    }
-
-    h2 {
-      font-size: 18px;
-      font-weight: 600;
-      margin-bottom: 10px;
-      color: var(--text);
-    }
-
-    p {
-      color: #374151;
-      margin-bottom: 12px;
-    }
-
-    ul {
-      padding-left: 20px;
-      margin-bottom: 12px;
-    }
-
-    li {
-      color: #374151;
-      margin-bottom: 6px;
-    }
-
-    a {
-      color: var(--brand);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .highlight-box {
-      background: var(--surface);
-      border-left: 3px solid var(--brand);
-      border-radius: 0 8px 8px 0;
-      padding: 16px 20px;
-      margin-bottom: 20px;
-    }
-
-    .highlight-box p {
-      margin: 0;
-      font-weight: 500;
-    }
-
-    footer {
-      border-top: 1px solid var(--border);
-      padding: 24px 0;
-      text-align: center;
-      font-size: 14px;
-      color: var(--muted);
-    }
-
-    footer a {
-      color: var(--muted);
-      margin: 0 12px;
-    }
+    :root { --brand: #FF774E; --text: #111827; --muted: #6B7280; --border: #E5E7EB; --bg: #FFFFFF; --surface: #F9FAFB; }
+    body { font-family: 'Inter', system-ui, sans-serif; font-size: 16px; line-height: 1.7; color: var(--text); background: var(--bg); padding: 0 20px; }
+    header { border-bottom: 1px solid var(--border); padding: 32px 0 24px; margin-bottom: 40px; }
+    .wordmark { font-family: 'Instrument Serif', Georgia, serif; font-size: 22px; color: var(--brand); text-decoration: none; display: inline-block; margin-bottom: 20px; }
+    h1 { font-family: 'Instrument Serif', Georgia, serif; font-size: clamp(28px, 5vw, 40px); font-weight: 400; line-height: 1.2; color: var(--text); }
+    .updated { margin-top: 8px; font-size: 14px; color: var(--muted); }
+    main { max-width: 680px; margin: 0 auto; padding-bottom: 80px; }
+    section { margin-bottom: 36px; }
+    h2 { font-size: 18px; font-weight: 600; margin-bottom: 10px; color: var(--text); }
+    p { color: #374151; margin-bottom: 12px; }
+    ul { padding-left: 20px; margin-bottom: 12px; }
+    li { color: #374151; margin-bottom: 6px; }
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .highlight-box { background: var(--surface); border-left: 3px solid var(--brand); border-radius: 0 8px 8px 0; padding: 16px 20px; margin-bottom: 20px; }
+    .highlight-box p { margin: 0; font-weight: 500; }
+    footer { border-top: 1px solid var(--border); padding: 24px 0; text-align: center; font-size: 14px; color: var(--muted); }
+    footer a { color: var(--muted); margin: 0 12px; }
   </style>
 </head>
 <body>
   <main>
     <header>
-      <a class="wordmark" href="https://carlos-sanchez.github.io/singlenote/">Singlenote</a>
+      <a class="wordmark" href="https://carlossanchez.me/singlenote/">Singlenote</a>
       <h1>Privacy Policy</h1>
       <p class="updated">Last updated: June 18, 2026</p>
     </header>
 
     <section>
       <div class="highlight-box">
-        <p>Singlenote is local-first. Your note never leaves your device. We do not operate servers that receive your content, and we do not collect personal information.</p>
+        <p>Singlenote stores your note exclusively on your device — your note content never leaves it. We collect only the minimal data needed to improve the app: anonymous usage analytics and crash reports.</p>
       </div>
     </section>
 
@@ -145,52 +49,60 @@
       <ul>
         <li>Your note content</li>
         <li>Your name, email address, or any contact information</li>
-        <li>Your location</li>
-        <li>Usage analytics or behavioural data</li>
-        <li>Crash reports</li>
       </ul>
       <p>All note content — text, checklists, links, and images — is stored exclusively in your device's local app storage and never leaves your device.</p>
     </section>
 
     <section>
-      <h2>2. Photo library access</h2>
+      <h2>2. Analytics and crash reporting</h2>
+      <p>We collect anonymous usage analytics and crash reports to understand how the app is used and to improve stability. This data may include:</p>
+      <ul>
+        <li>Anonymous usage events (such as features accessed and session duration)</li>
+        <li>Crash logs and diagnostic information</li>
+        <li>Device type, OS version, and country-level location derived from IP address</li>
+      </ul>
+      <p>Analytics data does not include the content of your note and cannot be used to identify you personally. We will update this section with the specific analytics tools used as they are integrated.</p>
+    </section>
+
+    <section>
+      <h2>3. Photo library access</h2>
       <p>Singlenote may request access to your photo library so you can insert images into your note. Images you choose to insert are copied to the app's local storage on your device. They are not uploaded to any server.</p>
     </section>
 
     <section>
-      <h2>3. Purchases and subscriptions</h2>
-      <p>Singlenote offers optional paid features processed through Apple App Store and Google Play. Purchases are handled by <strong>RevenueCat</strong>, a third-party subscription management platform. When you make a purchase, RevenueCat may collect:</p>
+      <h2>4. Purchases and subscriptions</h2>
+      <p>We plan to offer optional paid features processed through Apple App Store and Google Play. Purchases are managed through <strong>RevenueCat</strong>, a third-party subscription management platform. When you make a purchase, RevenueCat may collect:</p>
       <ul>
         <li>A randomly generated, anonymous user identifier</li>
         <li>Purchase receipts and transaction history</li>
-        <li>Device type and operating system version, for fraud prevention</li>
+        <li>Device type and OS version, for fraud prevention</li>
       </ul>
-      <p>RevenueCat does not receive your note content. For details on how RevenueCat handles data, see their <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">Privacy Policy</a>.</p>
-      <p>Purchases are also subject to the privacy policies of Apple and Google, depending on your device.</p>
+      <p>RevenueCat does not receive the content of your note. For details on how RevenueCat handles data, see their <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">Privacy Policy</a>.</p>
+      <p>Purchases are also subject to Apple's and Google's privacy policies depending on your device.</p>
     </section>
 
     <section>
-      <h2>4. Third-party services</h2>
-      <p>Singlenote does not integrate with advertising networks, analytics providers, or social platforms. The only third-party service we use is RevenueCat, described above, and only when you make a purchase.</p>
+      <h2>5. Third-party services</h2>
+      <p>Beyond analytics, crash reporting, and RevenueCat (used only during a purchase), Singlenote is not integrated with advertising networks, additional analytics providers, or social platforms.</p>
     </section>
 
     <section>
-      <h2>5. Data retention and deletion</h2>
-      <p>Since we do not collect your data, there is nothing for us to retain or delete on your behalf. Your note content exists only on your device and is deleted when you uninstall the app or use the in-app "Delete note" function.</p>
+      <h2>6. Data retention and deletion</h2>
+      <p>Your note content exists only on your device and is deleted when you uninstall the app or use the in-app "Delete note" function. Anonymous analytics and crash report data is retained by the analytics provider according to their own retention policies.</p>
     </section>
 
     <section>
-      <h2>6. Children's privacy</h2>
+      <h2>7. Children's privacy</h2>
       <p>Singlenote is not directed at children under the age of 13. We do not knowingly collect personal information from children.</p>
     </section>
 
     <section>
-      <h2>7. Changes to this policy</h2>
+      <h2>8. Changes to this policy</h2>
       <p>We may update this Privacy Policy as we add new features. If we make material changes — for example, if we introduce server-side features or additional data collection — we will update the "Last updated" date and notify you within the app. Continued use of Singlenote after changes constitutes your acceptance of the updated policy.</p>
     </section>
 
     <section>
-      <h2>8. Contact</h2>
+      <h2>9. Contact</h2>
       <p>If you have questions about this Privacy Policy, contact us at <a href="mailto:hi@carlossanchez.me">hi@carlossanchez.me</a>.</p>
     </section>
 

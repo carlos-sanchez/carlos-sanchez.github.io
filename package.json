@@ -1,0 +1,13 @@
+{
+  "name": "carlossanchez.me",
+  "private": true,
+  "scripts": {
+    "build": "tailwindcss -i src/tailwind.css -o css/site.css --minify",
+    "watch": "tailwindcss -i src/tailwind.css -o css/site.css --watch",
+    "optimize-images": "bash scripts/optimize-images.sh"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.0",
+    "tailwindcss": "^4.1.0"
+  }
+}

@@ -1,239 +1,229 @@
-<!doctype html>
-<html lang="en-EN">
+<!DOCTYPE html>
+<html lang="en-US">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta charset="UTF-8">
+  <title>Doctor24: From MVP to Scheduled Calls › Carlos Sánchez</title>
+  <meta name="description" content="Case study: how Doctor24 evolved from an MVP for unscheduled video calls to a full scheduled appointments product.">
+  <meta name="author" content="Carlos Sánchez">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Carlos Sánchez › Doctor24 Case Study</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="icon.png">
+  <link rel="apple-touch-icon" href="icon.png">
 
-<meta name="description" content="I am a Product Designer based in New York City"/>
-<meta name="author" content="Carlos Sánchez"/>
-<meta name="keywords" content="product ux design madrid ontruck"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css?v=15">
+  <link rel="canonical" href="https://carlossanchez.me/doctor24-case-study.html">
 
-<!--Mobile viewport optimization h5bp.com/ad -->
-<meta name="HandheldFriendly" content="True">
-<meta name="MobileOptimized" content="320">
-<meta name="viewport" content="width=device-width, initial-scale=1"> <!--allows zoom -->
+  <meta property="og:title" content="Doctor24: From MVP to Scheduled Calls">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://carlossanchez.me/img/posts/doctor24/doctor24.png">
+  <meta property="og:url" content="https://carlossanchez.me/doctor24-case-study.html">
+  <meta property="og:site_name" content="Carlos Sánchez">
+  <meta property="og:description" content="Case study: how Doctor24 evolved from an MVP for unscheduled video calls to a full scheduled appointments product.">
+  <meta property="og:locale" content="en_US">
 
-<!--Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
-<meta http-equiv="cleartype" content="on">
-
-<link rel="shortcut icon" href="favicon.ico" />
-<link rel="apple-touch-icon" href="icon.png"/>
-<link rel="icon" href="icon.png"/>
-
-<link rel="stylesheet" type="text/css" href="css/styles.css" />
-
-
-
-<!--For Facebook -->
-<meta property="og:title" content="Doctor24: From MVP to Scheduled Calls"/>
-<meta property="og:type" content="website"/>
-<meta property="og:image" content="https://carlossanchez.me/img/posts/doctor24/doctor24.png"/>
-<meta property="og:url" content="https://carlossanchez.me/doctor24-case-study.html"/>
-<meta property="og:site_name" content="Carlos Sánchez"/>
-<meta property="og:description" content="Doctor24 Case Study"/>
-
-<!--for Twitter -->
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Doctor24: From MVP to Scheduled Calls" />
-<meta name="twitter:description" content="Doctor24 Case Study" />
-<meta name="twitter:image" content="https://carlossanchez.me/img/posts/doctor24/doctor24.png" />
-
-
-<!--For Google+ -->
-<!--<html itemscope itemtype="http://schema.org/Article"> -->
-<meta itemprop="name" content="Doctor24: From MVP to Scheduled Calls">
-<meta itemprop="description" content="Doctor24 Case Study">
-<meta itemprop="image" content="https://carlossanchez.me/img/posts/doctor24/doctor24.png">
-
-
-<!--[if lt IE 9]>
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-
-
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="js/scripts-min.js"></script>
-
-
-<!--Global site tag (gtag.js) <li>Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-10359362-24"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-10359362-24');
-</script>
-
-
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Doctor24: From MVP to Scheduled Calls">
+  <meta name="twitter:description" content="Case study: how Doctor24 evolved from an MVP for unscheduled video calls to a full scheduled appointments product.">
+  <meta name="twitter:image" content="https://carlossanchez.me/img/posts/doctor24/doctor24.png">
+  <meta name="twitter:site" content="@chocotuits">
 </head>
 
-<body class="post-body">
+<body class="min-h-screen flex flex-col">
 
+  <header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b border-line">
+    <div class="mx-auto max-w-5xl px-6 h-16 flex items-center justify-between">
+      <a href="index.html" class="font-semibold tracking-tight text-ink hover:opacity-70 transition-opacity">Carlos Sánchez</a>
+      <nav aria-label="Main" class="hidden sm:block">
+        <ul class="flex items-center gap-8 text-sm text-soft">
+          <li><a href="index.html" class="text-ink font-medium">Work</a></li>
+          <li><a href="experience.html" class="hover:text-ink transition-colors">Experience</a></li>
+          <li><a href="about.html" class="hover:text-ink transition-colors">About</a></li>
+          <li><a href="contact.html" class="hover:text-ink transition-colors">Contact</a></li>
+        </ul>
+      </nav>
 
-<div class="post-wrapper" name="top">
-  <a class="back-to-home" href="index.html">&larr; carlossanchez.me</a>
+      <button type="button" id="menuToggle" class="sm:hidden -mr-2 p-2 text-ink" aria-expanded="false" aria-controls="mobileMenu" aria-label="Toggle menu">
+        <svg id="menuIconOpen" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        <svg id="menuIconClose" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true" class="hidden"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
 
-  <h1>Doctor24 Case Study: From MVP to Scheduled Calls</h1>
+    <nav id="mobileMenu" aria-label="Mobile" class="hidden sm:hidden border-t border-line">
+      <ul class="mx-auto max-w-5xl px-6 py-2 flex flex-col text-sm text-soft">
+        <li><a href="index.html" class="block py-2.5 text-ink font-medium">Work</a></li>
+          <li><a href="experience.html" class="block py-2.5 hover:text-ink transition-colors">Experience</a></li>
+          <li><a href="about.html" class="block py-2.5 hover:text-ink transition-colors">About</a></li>
+          <li><a href="contact.html" class="block py-2.5 hover:text-ink transition-colors">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <h2>Context</h2>
+  <main class="flex-1">
+    <article class="mx-auto max-w-3xl px-6 pt-20 pb-24 sm:pt-28 sm:pb-32">
 
-  <p>Doctor24 began as a simple telemedicine service, connecting users with doctors via online video calls. The concept was straightforward: log in, click, and consult a physician from anywhere.</p>
+      <a href="index.html" class="reveal text-sm text-soft hover:text-ink transition-colors">&larr; Back to work</a>
 
-  <figure>
-      <img src='img/posts/doctor24/doctor24.png' alt='Doctor24' />
-  </figure>
+      <div class="reveal mt-6">
+        <p class="text-xs uppercase tracking-widest text-soft">Case Study</p>
+        <h1 class="mt-2 text-2xl sm:text-4xl font-semibold tracking-tight">Doctor24 Case Study: From MVP to Scheduled Calls</h1>
+      </div>
 
-  <p>Traditional doctor visits demand time and effort, often leading people to self-medicate or delay care. Yet, prevention beats cure—both for health and cost. We asked: how can we bridge the gap between patients and doctors? Our hypothesis: if connecting with a doctor is effortless and instant, people will seek medical advice more often.</p>
+      <div class="reveal case-study-prose mt-10">
 
-  <h2>The MVP</h2>
+        <h2>Context</h2>
 
-  <p>In healthcare, you can’t rush and risk errors—sensitive data and legal compliance are non-negotiable. To test our hypothesis quickly yet safely, we built a lean, law-compliant web app for unscheduled video calls with primary care physicians.</p>
+        <p>Doctor24 began as a simple telemedicine service, connecting users with doctors via online video calls. The concept was straightforward: log in, click, and consult a physician from anywhere.</p>
 
-  <p><strong>Why a web app?</strong> It was the fastest way to create a unified platform for patients and doctors.</p>
+        <figure>
+          <img src="img/posts/doctor24/doctor24.png" alt="Doctor24">
+        </figure>
 
-  <p><strong>Why unscheduled calls?</strong> Scheduling adds layers of complexity—more on that later.</p>
+        <p>Traditional doctor visits take time and effort, so people often self-medicate or delay care, even though catching a problem early is cheaper and safer than treating it later. We wanted to close that gap between patients and doctors. Our hypothesis was that if connecting with a doctor took no effort, people would ask for medical advice more often.</p>
 
-  <p><strong>Why primary care physicians?</strong> A small team could address most common medical issues efficiently.</p>
+        <h2>The MVP</h2>
 
-  <p>The MVP aimed to answer key questions:</p>
+        <p>In healthcare you can't rush and risk errors. Sensitive data and legal compliance aren't negotiable. To test our hypothesis quickly and safely, we built a lean, law-compliant web app for unscheduled video calls with primary care physicians.</p>
 
-  <ul>
-      <li>Are Spaniards ready for telemedicine?</li>
-      <li>What share of medical issues can video calls resolve?</li>
-      <li>What problems will users bring to the service?</li>
-      <li>Do users prioritize speed or doctor choice?</li>
-      <li>What’s an acceptable wait time?</li>
-      <li>Will users sign up proactively or only when sick?</li>
-  </ul>
+        <p><strong>A web app.</strong> It was the fastest way to build one platform for patients and doctors.</p>
 
-  <h2>MVP Challenges</h2>
+        <p><strong>Unscheduled calls.</strong> Scheduling would have added complexity we weren't ready to take on yet.</p>
 
-  <figure>
-      <img src='img/posts/doctor24/hangouts-error.png' alt='Google Hangouts Error Screen' />
-      <figcaption>Google Hangouts error</figcaption>
-  </figure>
+        <p><strong>Primary care physicians.</strong> A small team could handle most common medical issues.</p>
 
-  <p>Video calls on platforms like Hangouts or Skype are prone to glitches. Add a medical consultation—complete with patient input, diagnosis, treatment, and billing—and complexity soars. We controlled the doctors’ internet stability, but patient-side disruptions were common. Here’s what we learned about user expectations:</p>
+        <p>The MVP aimed to answer key questions:</p>
 
-  <ul>
-      <li>Patients wanted to resume calls with the same doctor.</li>
-      <li>They hated repeating their medical history.</li>
-      <li>Doctors dreaded redoing diagnoses or prescriptions.</li>
-      <li>Failed calls shouldn’t clutter medical records—patients just wanted solutions.</li>
-  </ul>
+        <ul>
+          <li>Are Spaniards ready for telemedicine?</li>
+          <li>What share of medical issues can video calls resolve?</li>
+          <li>What problems will users bring to the service?</li>
+          <li>Do users prioritize speed or doctor choice?</li>
+          <li>What's an acceptable wait time?</li>
+          <li>Will users sign up proactively or only when sick?</li>
+        </ul>
 
-  <p>The MVP offered no doctor selection—just a “Talk to a doctor now” button. Interrupted calls couldn’t reconnect instantly, but with often just one doctor online, patients usually got the same physician on retry. When all doctors were busy, we showed an estimated wait time and queued patients in a virtual waiting room.</p>
+        <h2>MVP Challenges</h2>
 
-  <figure>
-      <img src='img/posts/doctor24/doctor24-interruptions.png' alt='Doctor24 calls interruptions' />
-      <figcaption>Possible interruptions during an unscheduled call</figcaption>
-  </figure>
+        <figure>
+          <img src="img/posts/doctor24/hangouts-error.png" alt="Google Hangouts Error Screen">
+          <figcaption>Google Hangouts error</figcaption>
+        </figure>
 
-  <h2>The Pilot</h2>
+        <p>Video calls on platforms like Hangouts or Skype are prone to glitches. A medical consultation adds patient history, diagnosis, treatment, and billing on top of that, so a dropped call costs a lot more than a normal one. We controlled the doctors' internet stability, but patient-side disruptions were common. Users expected:</p>
 
-  <p>In Spain, doctor visits cost companies €330 per employee annually. We pitched Doctor24 as a B2B perk—saving employees time and employers money. A three-month pilot with a pharmaceutical company gave all their Spanish staff access. Key findings emerged:</p>
+        <ul>
+          <li>To resume calls with the same doctor.</li>
+          <li>Not to repeat their medical history.</li>
+          <li>Doctors who didn't have to redo diagnoses or prescriptions.</li>
+          <li>Failed calls that didn't leave clutter in their medical record.</li>
+        </ul>
 
-  <ul>
-      <li>Users accurately judged which issues suited video calls—doctors resolved 83% of cases.</li>
-      <li>Skepticism faded after the first try.</li>
-      <li>Follow-ups with the same doctor were in demand.</li>
-      <li>Recurrent users valued familiarity but loved instant access too.</li>
-      <li>Chat worked as a fallback when video failed—hinting a simpler MVP might’ve sufficed.</li>
-  </ul>
+        <p>The MVP offered no doctor selection, only a "Talk to a doctor now" button. Interrupted calls couldn't reconnect instantly, but since often only one doctor was online, patients usually got the same physician again on retry. When all doctors were busy, we showed an estimated wait time and queued patients in a virtual waiting room.</p>
 
-  <p>The pilot confirmed Doctor24’s value: it solved real problems, and patients embraced it. Next, we’d commercialize to test product/market fit while addressing pilot feedback. We pivoted to support two use cases:</p>
+        <h2>The Pilot</h2>
 
-  <ul>
-      <li>Instant doctor access for emergencies and new users.</li>
-      <li>Follow-ups with a preferred doctor for recurring patients.</li>
-  </ul>
+        <p>In Spain, doctor visits cost companies €330 per employee a year. We pitched Doctor24 as a B2B perk that saved employees time and employers money. A three-month pilot with a pharmaceutical company gave their entire Spanish staff access, and we learned:</p>
 
-  <h2>Scheduled Calls</h2>
+        <ul>
+          <li>Users were accurate about which issues suited a video call. Doctors resolved 83% of cases.</li>
+          <li>Skepticism faded after the first try.</li>
+          <li>Patients wanted follow-ups with the same doctor.</li>
+          <li>Recurring users valued that familiarity but also loved instant access.</li>
+          <li>Chat worked as a fallback when video failed, which made us wonder if a simpler MVP would have been enough.</li>
+        </ul>
 
-  <p>Post-pilot, we tackled scheduled calls to fix MVP flaws. The plan: connect instantly if your doctor’s free; otherwise, pick another physician or book a slot. This also solved reconnection woes after dropped calls.</p>
+        <p>The pilot confirmed what we'd hoped: Doctor24 solved a real problem, and patients kept using it. Next we needed to commercialize it and test product-market fit while fixing what the pilot had exposed. We pivoted to support two use cases:</p>
 
-  <h2>Scheduled Calls Challenges</h2>
+        <ul>
+          <li>Instant doctor access for emergencies and new users.</li>
+          <li>Follow-ups with a preferred doctor for recurring patients.</li>
+        </ul>
 
-  <p>Unscheduled calls kept the MVP simple—scheduling upends that. Consider:</p>
+        <h2>Scheduled Calls</h2>
 
-  <ul>
-      <li>Setting medical shifts.</li>
-      <li>Ensuring doctors log in on time.</li>
-      <li>Defining time slots.</li>
-      <li>Managing overlaps.</li>
-      <li>Tracking and reminding about appointments.</li>
-      <li>Handling cancellations.</li>
-      <li>Delaying virtual room access until the doctor’s ready.</li>
-  </ul>
+        <p>After the pilot, we tackled scheduled calls to fix the MVP's flaws. Patients could connect instantly if their doctor was free, or pick another physician or book a slot if not. This also fixed the reconnection problem after dropped calls.</p>
 
-  <h2>The Solution</h2>
+        <h2>Scheduled Calls Challenges</h2>
 
-  <p>Overlapping appointments proved tricky. Fixed slots clashed with fluid consultations—doctors couldn’t cut off patients mid-conversation. A doctor-only timer showed if another patient waited, letting them choose:</p>
+        <p>Unscheduled calls kept the MVP simple. Scheduling breaks that simplicity in a few ways:</p>
 
-  <ul>
-      <li>Schedule a follow-up.</li>
-      <li>Wrap up for the next patient.</li>
-      <li>Continue if no one’s waiting.</li>
-  </ul>
+        <ul>
+          <li>Setting medical shifts.</li>
+          <li>Ensuring doctors log in on time.</li>
+          <li>Defining time slots.</li>
+          <li>Managing overlaps.</li>
+          <li>Tracking and reminding about appointments.</li>
+          <li>Handling cancellations.</li>
+          <li>Delaying virtual room access until the doctor's ready.</li>
+        </ul>
 
-  <figure>
-      <img src='img/posts/doctor24/doctor24-appointment-overlappings.png' alt='Doctor24 appointment overlappings' />
-      <figcaption>Possible appointment overlapping scenarios</figcaption>
-  </figure>
+        <h2>The Solution</h2>
 
-  <p>We started with 15-minute slots—adjustable based on data—and allowed bookings up to two minutes before a session. Interrupted calls? Easy reconnection. For “Talk to a doctor now,” we reserved unbooked slots, ensuring at least one doctor was always available unscheduled, while others handled appointments. This flexed for full- and part-time physicians.</p>
+        <p>Overlapping appointments proved tricky. Fixed slots clashed with fluid consultations, since doctors couldn't cut a patient off mid-conversation. A doctor-only timer showed when another patient was waiting and let them choose:</p>
 
-  <figure>
-      <img src='img/posts/doctor24/doctor24-scheduled-calls.png' alt='Doctor24 scheduled calls' />
-      <figcaption>Possible scenarios during a scheduled call</figcaption>
-  </figure>
+        <ul>
+          <li>Schedule a follow-up.</li>
+          <li>Wrap up for the next patient.</li>
+          <li>Continue if no one's waiting.</li>
+        </ul>
 
-  <figure>
-      <img src='img/posts/doctor24/doctor24-unscheduled-calls.png' alt='Doctor24 unscheduled calls' />
-      <figcaption>Possible scenarios during an unscheduled call</figcaption>
-  </figure>
+                <figure>
+          <img src="img/posts/doctor24/doctor24-appointment-overlappings.png" alt="Doctor24 appointment overlappings">
+          <figcaption>Possible appointment overlapping scenarios</figcaption>
+        </figure>
 
-  <h2>The Results</h2>
+        <p>We started with 15-minute slots, adjustable later based on data, and let patients book up to two minutes before a session started. Reconnecting after an interrupted call stayed simple. For "Talk to a doctor now," we reserved unbooked slots so at least one doctor was always free for instant calls while others handled appointments. That worked for both full-time and part-time physicians.</p>
 
-  <p>Scheduled calls fixed MVP hiccups—reconnections included—while keeping the platform intuitive, despite added complexity. Scalability soared. But sales lagged. Users loved Doctor24; companies didn’t see enough value. We explored new pricing and a B2C pivot, but the service shut down. Would scheduled calls have won over businesses? We’ll never know.</p>
+                <figure>
+          <img src="img/posts/doctor24/doctor24-scheduled-calls.png" alt="Doctor24 scheduled calls">
+          <figcaption>Possible scenarios during a scheduled call</figcaption>
+        </figure>
 
-  <p>Product/market fit eluded us, yet Doctor24’s potential shone. Telemedicine’s future—where physical visits are rare, and prevention rules—feels inevitable. It’s cost-effective for providers and life-enhancing for patients.</p>
-  <a class="back-to-home" href="index.html">&larr; carlossanchez.me</a>
+                <figure>
+          <img src="img/posts/doctor24/doctor24-unscheduled-calls.png" alt="Doctor24 unscheduled calls">
+          <figcaption>Possible scenarios during an unscheduled call</figcaption>
+        </figure>
 
+        <h2>The Results</h2>
 
-</div>
+        <p>Scheduled calls fixed the MVP's problems, reconnections included, without making the platform harder to use despite the added complexity. The product could now handle far more volume, but sales lagged. Users loved Doctor24, but companies didn't see enough value in it to pay for it. We tried new pricing and a B2C pivot, but the service shut down before we found out whether scheduled calls alone could have won businesses over.</p>
 
+        <p>We never found product/market fit, but I still believe in what Doctor24 was building toward. Telemedicine where physical visits are rare and prevention comes first looks like where healthcare is headed. It's cheaper for providers to deliver and easier for patients to use.</p>
 
-<div class="container">
-  <ul class="legal-links">
-    <li><a href="cookies-policy.html" target="_blank">Cookies Policy</a></li>
-  </ul>
-</div>
+      </div>
 
+      <a href="index.html" class="reveal mt-16 inline-block text-sm text-soft hover:text-ink transition-colors">&larr; Back to work</a>
 
-<a class="scroll-to-anchor back-to-top" id="backToTop" title="Back to top" href="#top">
-  <img src="img/up-arrow.svg" alt="up arrow">
-</a>
+    </article>
+  </main>
 
-
-
-
-
-<!-- Begin Cookie Consent plugin by Silktide <li>http://silktide.com/cookieconsent -->
-<script type="text/javascript">
-    window.cookieconsent_options = {"message":"This website uses cookies to ensure you get the best experience. ","dismiss":"Got it!","learnMore":"More info","link":"cookies-policy.html","theme":"dark-bottom","target":"_blank"};
-</script>
-
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js"></script>
-<!-- End Cookie Consent plugin -->
-
-
+  <footer class="border-t border-line">
+    <div class="mx-auto max-w-5xl px-6 py-12 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
+      <div class="flex items-center gap-5">
+        <span class="text-sm text-soft">Get in touch</span>
+        <a href="mailto:hi@carlossanchez.me" class="text-sm font-medium text-ink underline-offset-4 hover:underline">hi@carlossanchez.me</a>
+        <a href="https://x.com/chocotuits" target="_blank" rel="noopener" title="X" class="text-soft hover:text-ink transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+            <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+          </svg>
+          <span class="sr-only">X</span>
+        </a>
+        <a href="https://www.linkedin.com/in/carlos-sanchez-garcia/" target="_blank" rel="noopener" title="LinkedIn" class="text-soft hover:text-ink transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+          </svg>
+          <span class="sr-only">LinkedIn</span>
+        </a>
+      </div>
+      <ul class="flex items-center gap-5 text-xs text-soft">
+        <li><a href="privacy-policy.html" class="hover:text-ink transition-colors">Privacy Policy</a></li>
+        <li><a href="cookies-policy.html" class="hover:text-ink transition-colors">Cookie Policy</a></li>
+      </ul>
+    </div>
+  </footer>
 
 </body>
 </html>
-
-<!-- /nonessential resources -->
-<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Roboto:400,400i,700,700i|Lora:400,700" rel="stylesheet">

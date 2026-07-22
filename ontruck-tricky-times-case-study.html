@@ -1,231 +1,215 @@
-<!doctype html>
-<html lang="en-EN">
+<!DOCTYPE html>
+<html lang="en-US">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta charset="UTF-8">
+  <title>Ontruck: Solving the Tricky Times Problem › Carlos Sánchez</title>
+  <meta name="description" content="Case study: how we identified and solved the impossible and tricky times problems in Ontruck's shipment booking flow.">
+  <meta name="author" content="Carlos Sánchez">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Carlos Sánchez › Ontruck Tricky Times Case Study</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="icon.png">
+  <link rel="apple-touch-icon" href="icon.png">
 
-<meta name="description" content="I am a Product Designer based in New York City"/>
-<meta name="author" content="Carlos Sánchez"/>
-<meta name="keywords" content="product ux design madrid ontruck"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css?v=15">
+  <link rel="canonical" href="https://carlossanchez.me/ontruck-tricky-times-case-study.html">
 
-<!--Mobile viewport optimization h5bp.com/ad -->
-<meta name="HandheldFriendly" content="True">
-<meta name="MobileOptimized" content="320">
-<meta name="viewport" content="width=device-width, initial-scale=1"> <!--allows zoom -->
+  <meta property="og:title" content="Ontruck: Solving the Tricky Times Problem">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://carlossanchez.me/img/projects/ontruck-tricky-times.png">
+  <meta property="og:url" content="https://carlossanchez.me/ontruck-tricky-times-case-study.html">
+  <meta property="og:site_name" content="Carlos Sánchez">
+  <meta property="og:description" content="Case study: how we identified and solved the impossible and tricky times problems in Ontruck's shipment booking flow.">
+  <meta property="og:locale" content="en_US">
 
-<!--Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
-<meta http-equiv="cleartype" content="on">
-
-<link rel="shortcut icon" href="favicon.ico" />
-<link rel="apple-touch-icon" href="icon.png"/>
-<link rel="icon" href="icon.png"/>
-
-<link rel="stylesheet" type="text/css" href="css/styles.css" />
-
-
-
-<!--For Facebook -->
-<meta property="og:title" content="Ontruck: Solving the Tricky Times Problem"/>
-<meta property="og:type" content="website"/>
-<meta property="og:image" content="https://carlossanchez.me/img/projects/post-communication.jpg"/>
-<meta property="og:url" content="https://carlossanchez.me/ontruck-tricky-times-case-study.html"/>
-<meta property="og:site_name" content="Carlos Sánchez"/>
-<meta property="og:description" content="Ontruck Case Study"/>
-
-<!--for Twitter -->
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Ontruck: Solving the Tricky Times Problem" />
-<meta name="twitter:description" content="Ontruck Case Study" />
-<meta name="twitter:image" content="https://carlossanchez.me/img/projects/post-communication.jpg" />
-
-
-<!--For Google+ -->
-<!--<html itemscope itemtype="http://schema.org/Article"> -->
-<meta itemprop="name" content="Ontruck: Solving the Tricky Times Problem">
-<meta itemprop="description" content="Ontruck Case Study">
-<meta itemprop="image" content="https://carlossanchez.me/img/projects/post-communication.jpg">
-
-
-<!--[if lt IE 9]>
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-
-
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="js/scripts-min.js"></script>
-
-
-<!--Global site tag (gtag.js) <li>Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-10359362-24"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-10359362-24');
-</script>
-
-
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ontruck: Solving the Tricky Times Problem">
+  <meta name="twitter:description" content="Case study: how we identified and solved the impossible and tricky times problems in Ontruck's shipment booking flow.">
+  <meta name="twitter:image" content="https://carlossanchez.me/img/projects/ontruck-tricky-times.png">
+  <meta name="twitter:site" content="@chocotuits">
 </head>
 
-<body class="post-body">
+<body class="min-h-screen flex flex-col">
 
+  <header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b border-line">
+    <div class="mx-auto max-w-5xl px-6 h-16 flex items-center justify-between">
+      <a href="index.html" class="font-semibold tracking-tight text-ink hover:opacity-70 transition-opacity">Carlos Sánchez</a>
+      <nav aria-label="Main" class="hidden sm:block">
+        <ul class="flex items-center gap-8 text-sm text-soft">
+          <li><a href="index.html" class="text-ink font-medium">Work</a></li>
+          <li><a href="experience.html" class="hover:text-ink transition-colors">Experience</a></li>
+          <li><a href="about.html" class="hover:text-ink transition-colors">About</a></li>
+          <li><a href="contact.html" class="hover:text-ink transition-colors">Contact</a></li>
+        </ul>
+      </nav>
 
-<div class="post-wrapper" name="top">
-  <a class="back-to-home" href="index.html">&larr; carlossanchez.me</a>
+      <button type="button" id="menuToggle" class="sm:hidden -mr-2 p-2 text-ink" aria-expanded="false" aria-controls="mobileMenu" aria-label="Toggle menu">
+        <svg id="menuIconOpen" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        <svg id="menuIconClose" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true" class="hidden"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
 
+    <nav id="mobileMenu" aria-label="Mobile" class="hidden sm:hidden border-t border-line">
+      <ul class="mx-auto max-w-5xl px-6 py-2 flex flex-col text-sm text-soft">
+        <li><a href="index.html" class="block py-2.5 text-ink font-medium">Work</a></li>
+          <li><a href="experience.html" class="block py-2.5 hover:text-ink transition-colors">Experience</a></li>
+          <li><a href="about.html" class="block py-2.5 hover:text-ink transition-colors">About</a></li>
+          <li><a href="contact.html" class="block py-2.5 hover:text-ink transition-colors">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <h1>Ontruck Case Study: Solving the Tricky Times Problem</h1>
-  <h2>Context</h2>
-  <p>
-    <a href="https://ontruck.com/en/" target="_blank">Ontruck</a> is a service that allows companies with road freight shipping needs to easily book and track shipments online. We refer to these companies as shippers.
-  </p>
-  <p>
-    Shippers can book shipments with as many pickups and dropoffs as they need. When booking a shipment, we ask them to provide a time window for each stop. Time windows of zero minutes are allowed because pickup/dropoff points often provide shippers with specific appointment times.
-  </p>
-  <figure>
-    <img src='img/posts/ontruck-tricky-times/time-pickers.png' alt='Ontruck Time Pickers' />
-    <figcaption>Pickup and dropoff time pickers</figcaption>
-  </figure>
-<p>
-  When we originally designed the shipment booking flow, we decided to keep validation as simple as possible. These were the only validation rules that applied initially:
-</p>
-<ul>
-  <li>'Pickup to' can't be earlier than 'Pickup from'</li>
-  <li>'Dropoff to' can't be earlier than 'Dropoff from'</li>
-  <li>'Dropoff from' can't be earlier than 'Pickup from'</li>
-  <li>'Dropoff to' can't be earlier than 'Pickup to'</li>
-</ul>
-<p>
-  We knew we were taking risks by giving so much flexibility to shippers, but we preferred to launch a simple solution and learn from users' behavior rather than over-engineer a solution based on the assumption that shippers would provide problematic pickup/dropoff times.
-</p>
-<h2>Problem</h2>
-<p>
-Soon after we launched, our drivers started complaining that sometimes it was hard, or even impossible, to make it on time to all the stops in a job. We looked at data to verify this, and a significant percentage of shipments did indeed present issues with their pickup/dropoff times. These issues fell into two different categories:
-</p>
-<ul>
-    <li><strong>Impossible times</strong>: times that are virtually impossible to meet. For example, pickup in Toledo at 10 am and dropoff in Getafe at 10:30 am (driving time between Getafe and Toledo with no traffic is 45 min).</li>
-    <li><strong>Tricky times:</strong> times that are technically possible but tricky. For example, pickup in Toledo from 10 am to 3 pm, and dropoff in Getafe at 3 pm. If the pickup happens at 3 pm, the driver will be late to the dropoff for sure.</li>
-</ul>
-<h2>Initial approach</h2>
-<p>
-  At Ontruck, problems are generally prioritized by Product Managers and solved by Product Designers. We didn't jump into solving these problems right away for different reasons. The impossible times problem had some obvious quick solutions, but it wasn't happening very often, which made sense, since most shippers knew pretty well what the driving times between locations were. The tricky times problem was happening more often, but solving the problem through our products or processes wasn't straightforward, so we decided not to tackle it for the time being.
-</p>
-<h2>Related problem</h2>
-<p>
-  In the early days, our Fleet team manually reviewed all next-day shipments to anticipate and solve any potential problems. This included verifying addresses, checking if the driver had overlapping jobs, making sure the assigned vehicle was right for the cargo, and checking if pickup/dropoff times were doable. It is needless to say that this process didn't scale very well. The problem got bigger as the number of shipments we handled grew, so it was eventually prioritized by the Product Manager in my squad. I was in charge of finding a solution.
-  </p>
-<p>
-After doing some research to better understand why next-day jobs needed to be verified and the consequences of not doing it, it became clear that the problem could be tackled from two different angles: we could try to decrease the number of problematic shipments by doing things on the shippers' side (e.g., stricter form validation), or we could help our Fleet team focus on problematic shipments only.
-</p>
-<p>
-No matter what we did on the shippers' side, we were going to keep receiving problematic shipments, so we decided to tackle the problem from the other end. I went to the product engineers in my squad to discuss the possibility of automatically identifying any of the problems that our Fleet team searched for every single day. I learned that we could automatically identify problems such as suspicious addresses, weird cargo characteristics, or even scan the special requirements field searching for specific words that we knew could mean trouble. This is when I saw an opportunity to tackle the tricky times problem, which was in our problems backlog.
-</p>
-<p>
-After aligning all the stakeholders, I started designing an alert system that would allow our Fleet team to stop reviewing all next-day shipments and start focusing on potentially problematic shipments only.
-</p>
-<p>
-We decided to ship a solution that alerted about four types of problems, with the idea of adding more types of problems in the future, so that our Fleet team could eventually rely 100% on the alert system. These are the actions that could be performed by our agents on the alerts:
-</p>
-<ul>
-<li><strong>Monitor:</strong> This action was used to keep an eye on the shipment. An alert might require giving specific instructions to the driver, but our agents would have to wait until the shipment was assigned to a driver to do it. In those situations, they would choose to monitor the alert.</li>
-<li><strong>Problem solved:</strong> Some of the problems would resolve automatically. For example, an impossible times problem would automatically resolve when the shipment times were modified. But there were other cases where we couldn't automatically detect if the problem had been solved, and therefore agents needed a way to resolve them manually.</li>
-<li><strong>False alarm:</strong> We expected a certain number of false positives, especially from scanning the special requirements field looking for specific words that could mean trouble. This action allowed agents to dismiss the alert and let us know that a false positive had happened, so that we could iterate the system.</li>
-</ul>
-<h2>Back to the original problem</h2>
-<p>
-The alert system solution improved the productivity of our Fleet team. It also allowed us to react earlier to problematic shipments, including those with tricky times. Detecting impossible times required calculating driving times between stops, but tricky times followed a pattern that was easy to identify: the pickup-to and dropoff-to times were the same. When the alert system detected these cases, our agents were able to reach out to drivers in advance, asking them to plan their route to ensure they could make it on time to all the stops.
-</p>
-<p>
-The impossible times problem was still unsolved, and although most tricky times cases were detected in time, reaching out to drivers every time was a lot of work for our Fleet team. That's why, a few months after the alert system had been deployed, the impossible and tricky times problem was prioritized by the Product Manager in my squad, and I set out to find a solution.
-</p>
-<h2>Solving the impossible times problem</h2>
-<p>
-Out of the two problems, this was the easy one, so I decided to tackle it first. As mentioned above, the only validation rule that affected the 'Dropoff from' input was this one: 'Dropoff from' can't be earlier than 'Pickup from'. This wasn't a problem if the time windows were big enough. For example, considering the driving time between Getafe and Toledo is around 45 min, these times were tricky but not impossible:
-</p>
-<div class="callout">
-<span class="callout__icon">✅</span>
-<div class="callout__text">Pickup in Getafe from 9:00 am to 11:00 am and Dropoff in Toledo from 9:00 to 11:00.</div>
-</div>
-<p>
-The problem was when the difference between the 'Pickup from' time and the 'Dropoff to' time was shorter than the driving time. For example:
-</p>
-<div class="callout">
-  <span class="callout__icon">⚠️</span>
-  <div class="callout__text">Pickup in Getafe from 9:30 am to 9:30 am and Dropoff in Toledo from 10:00 to 10:00.</div>
-</div>
-<p>
-We knew the average loading time for a shipment depending on the number of pallets. We also could calculate driving distances between two stops. With all that information, we introduced a new validation rule: <strong>Minimum 'Dropoff from' time = 'Pickup from' time + X + Y</strong>, where X is the optimistic loading time for the number of pallets in the shipment and Y is the optimistic driving time for the distance between the stops.
-</p>
-<p>
-The reason why we used the optimistic driving times was because calculating driving times considering the expected traffic was technically expensive and was left out of scope.
-</p>
-<figure>
-  <img src='img/posts/ontruck-tricky-times/impossible-times.png' alt='impossible times' />
-  <figcaption>Minimum 'Dropoff from' time = 'Pickup from' time + X + Y</figcaption>
-</figure>
-<p>
-Today, drivers only make it late to one stop when the times are tight and the loading time or the driving time takes longer than expected, but other than that, this solution solved the impossible times problem.
-</p>
-<h2>Solving the tricky times problem</h2>
-<p>
-After the solution for the impossible times problem was designed, I moved to the tricky times problem. I started by exploring the obvious solution, which was introducing new validation rules just like we had just done for the impossible times problem, but I soon realized that they would have a negative impact on the user experience. We couldn't set a minimum 'Dropoff to' time based on the 'Dropoff from' time because pickup/dropoff points often provided shippers with specific appointment times. That means that a dropoff window of zero minutes was perfectly valid.
-</p>
-<p>
-The tricky times problem could only be detected after the user selected the 'Dropoff to' time, which is the last of the four times in the booking flow, and overriding times that the user had already typed didn't make any sense. Displaying a warning to the shipper when the problem was detected didn't sound like a good solution either, considering the times were actually doable.
-</p>
-<p>
-But what if, instead of adding friction to the shippers, we could just translate tricky times into non-tricky times? I started exploring this avenue, which led me to the final solution. Tricky times would happen whenever the time between the 'Pickup to' and the 'Dropoff to' was shorter than the loading time plus the driving time between the stops. By communicating to the driver a different 'Pickup to' time than the one requested by the shipper, we could solve the problem. Both the pickup and the dropoff would happen within the time window requested by the shipper, but we would avoid running late to the dropoff.
-</p>
-<figure>
-  <img src='img/posts/ontruck-tricky-times/tricky-times.png' alt='tricky times' />
-  <figcaption>Tricky times cases</figcaption>
-</figure>
-<p>
-To make this work, we also had to introduce some changes in the tool that our Fleet and Traffic teams use to monitor shipments. Since they had to communicate with both shippers and drivers, they needed to be able to visualize both the original times requested by the shipper and the times we shared with the drivers in the tricky times cases.
-</p>
-<p>
-This solution improved the on-time rate for tricky times shipments by 7 points. That was a huge improvement, and we considered the problem solved. If at some point we can calculate driving times based on expected traffic, then we should be able to improve the on-time rate of tricky shipments even further.
-</p>
-<p>This case study is a good example of how products are designed and built at Ontruck. It all starts with a problem-based roadmap instead of a feature-based one. From there, problem-solving rarely follows a linear path. We work in lean cycles, looking for ways to validate our hypotheses by investing as little time and effort as possible.</p>
+  <main class="flex-1">
+    <article class="mx-auto max-w-3xl px-6 pt-20 pb-24 sm:pt-28 sm:pb-32">
 
+      <a href="index.html" class="reveal text-sm text-soft hover:text-ink transition-colors">&larr; Back to work</a>
 
+      <div class="reveal mt-6">
+        <p class="text-xs uppercase tracking-widest text-soft">Case Study</p>
+        <h1 class="mt-2 text-2xl sm:text-4xl font-semibold tracking-tight">Ontruck Case Study: Solving the Tricky Times Problem</h1>
+      </div>
 
-  <a class="back-to-home" href="index.html">&larr; carlossanchez.me</a>
+      <div class="reveal case-study-prose mt-10">
 
+        <h2>Context</h2>
 
-</div>
+        <p><a href="https://ontruck.com/en/" target="_blank" rel="noopener">Ontruck</a> is a service that allows companies with road freight shipping needs to easily book and track shipments online. We refer to these companies as shippers.</p>
 
+        <p>Shippers can book shipments with as many pickups and dropoffs as they need. When booking a shipment, we ask them to provide a time window for each stop. Time windows of zero minutes are allowed because pickup/dropoff points often provide shippers with specific appointment times.</p>
 
-<div class="container">
-  <ul class="legal-links">
-    <li><a href="cookies-policy.html" target="_blank">Cookies Policy</a></li>
-  </ul>
-</div>
+        <figure>
+          <img src="img/posts/ontruck-tricky-times/time-pickers.png" alt="Ontruck Time Pickers">
+          <figcaption>Pickup and dropoff time pickers</figcaption>
+        </figure>
 
+        <p>When we originally designed the shipment booking flow, we decided to keep validation as simple as possible. These were the only validation rules that applied initially:</p>
 
-<a class="scroll-to-anchor back-to-top" id="backToTop" title="Back to top" href="#top">
-  <img src="img/up-arrow.svg" alt="up arrow">
-</a>
+        <ul>
+          <li>'Pickup to' can't be earlier than 'Pickup from'</li>
+          <li>'Dropoff to' can't be earlier than 'Dropoff from'</li>
+          <li>'Dropoff from' can't be earlier than 'Pickup from'</li>
+          <li>'Dropoff to' can't be earlier than 'Pickup to'</li>
+        </ul>
 
+        <p>We knew we were taking risks by giving so much flexibility to shippers, but we preferred to launch a simple solution and learn from users' behavior rather than over-engineer a solution based on the assumption that shippers would provide problematic pickup/dropoff times.</p>
 
+        <h2>Problem</h2>
 
+        <p>Soon after we launched, our drivers started complaining that sometimes it was hard, or even impossible, to make it on time to all the stops in a job. We looked at data to verify this, and a significant percentage of shipments did indeed present issues with their pickup/dropoff times. These issues fell into two different categories:</p>
 
+        <ul>
+          <li><strong>Impossible times</strong>: times that are virtually impossible to meet. For example, pickup in Toledo at 10 am and dropoff in Getafe at 10:30 am (driving time between Getafe and Toledo with no traffic is 45 min).</li>
+          <li><strong>Tricky times:</strong> times that are technically possible but tricky. For example, pickup in Toledo from 10 am to 3 pm, and dropoff in Getafe at 3 pm. If the pickup happens at 3 pm, the driver will be late to the dropoff for sure.</li>
+        </ul>
 
-<!--Begin Cookie Consent plugin by Silktide <li>http://silktide.com/cookieconsent -->
-<script type="text/javascript">
-    window.cookieconsent_options = {"message":"This website uses cookies to ensure you get the best experience. ","dismiss":"Got it!","learnMore":"More info","link":"cookies-policy.html","theme":"dark-bottom","target":"_blank"};
-</script>
+        <h2>Initial approach</h2>
 
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js"></script>
-<!--End Cookie Consent plugin -->
+        <p>At Ontruck, problems are generally prioritized by Product Managers and solved by Product Designers. We didn't jump into solving these problems right away for different reasons. The impossible times problem had some obvious quick solutions, but it wasn't happening very often, which made sense, since most shippers knew pretty well what the driving times between locations were. The tricky times problem was happening more often, but solving the problem through our products or processes wasn't straightforward, so we decided not to tackle it for the time being.</p>
 
+        <h2>Related problem</h2>
 
+        <p>In the early days, our Fleet team manually reviewed all next-day shipments to anticipate and solve any potential problems. This included verifying addresses, checking if the driver had overlapping jobs, making sure the assigned vehicle was right for the cargo, and checking if pickup/dropoff times were doable. It is needless to say that this process didn't scale very well. The problem got bigger as the number of shipments we handled grew, so it was eventually prioritized by the Product Manager in my squad. I was in charge of finding a solution.</p>
+
+        <p>After doing some research to better understand why next-day jobs needed to be verified and the consequences of not doing it, it became clear that the problem could be tackled from two different angles: we could try to decrease the number of problematic shipments by doing things on the shippers' side (e.g., stricter form validation), or we could help our Fleet team focus on problematic shipments only.</p>
+
+        <p>No matter what we did on the shippers' side, we were going to keep receiving problematic shipments, so we decided to tackle the problem from the other end. I went to the product engineers in my squad to discuss the possibility of automatically identifying any of the problems that our Fleet team searched for every single day. I learned that we could automatically identify problems such as suspicious addresses, weird cargo characteristics, or even scan the special requirements field searching for specific words that we knew could mean trouble. This is when I saw an opportunity to tackle the tricky times problem, which was in our problems backlog.</p>
+
+        <p>After aligning all the stakeholders, I started designing an alert system that would allow our Fleet team to stop reviewing all next-day shipments and start focusing on potentially problematic shipments only.</p>
+
+        <p>We decided to ship a solution that alerted about four types of problems, with the idea of adding more types of problems in the future, so that our Fleet team could eventually rely 100% on the alert system. These are the actions that could be performed by our agents on the alerts:</p>
+
+        <ul>
+          <li><strong>Monitor:</strong> This action was used to keep an eye on the shipment. An alert might require giving specific instructions to the driver, but our agents would have to wait until the shipment was assigned to a driver to do it. In those situations, they would choose to monitor the alert.</li>
+          <li><strong>Problem solved:</strong> Some of the problems would resolve automatically. For example, an impossible times problem would automatically resolve when the shipment times were modified. But there were other cases where we couldn't automatically detect if the problem had been solved, and therefore agents needed a way to resolve them manually.</li>
+          <li><strong>False alarm:</strong> We expected a certain number of false positives, especially from scanning the special requirements field looking for specific words that could mean trouble. This action allowed agents to dismiss the alert and let us know that a false positive had happened, so that we could iterate the system.</li>
+        </ul>
+
+        <h2>Back to the original problem</h2>
+
+        <p>The alert system solution improved the productivity of our Fleet team. It also allowed us to react earlier to problematic shipments, including those with tricky times. Detecting impossible times required calculating driving times between stops, but tricky times followed a pattern that was easy to identify: the pickup-to and dropoff-to times were the same. When the alert system detected these cases, our agents were able to reach out to drivers in advance, asking them to plan their route to ensure they could make it on time to all the stops.</p>
+
+        <p>The impossible times problem was still unsolved, and although most tricky times cases were detected in time, reaching out to drivers every time was a lot of work for our Fleet team. That's why, a few months after the alert system had been deployed, the impossible and tricky times problem was prioritized by the Product Manager in my squad, and I set out to find a solution.</p>
+
+        <h2>Solving the impossible times problem</h2>
+
+        <p>Out of the two problems, this was the easy one, so I decided to tackle it first. As mentioned above, the only validation rule that affected the 'Dropoff from' input was this one: 'Dropoff from' can't be earlier than 'Pickup from'. This wasn't a problem if the time windows were big enough. For example, considering the driving time between Getafe and Toledo is around 45 min, these times were tricky but not impossible:</p>
+
+        <div class="callout">
+          <span class="callout__icon">✅</span>
+          <div class="callout__text">Pickup in Getafe from 9:00 am to 11:00 am and Dropoff in Toledo from 9:00 to 11:00.</div>
+        </div>
+
+        <p>The problem was when the difference between the 'Pickup from' time and the 'Dropoff to' time was shorter than the driving time. For example:</p>
+
+        <div class="callout">
+          <span class="callout__icon">⚠️</span>
+          <div class="callout__text">Pickup in Getafe from 9:30 am to 9:30 am and Dropoff in Toledo from 10:00 to 10:00.</div>
+        </div>
+
+        <p>We knew the average loading time for a shipment depending on the number of pallets. We also could calculate driving distances between two stops. With all that information, we introduced a new validation rule: <strong>Minimum 'Dropoff from' time = 'Pickup from' time + X + Y</strong>, where X is the optimistic loading time for the number of pallets in the shipment and Y is the optimistic driving time for the distance between the stops.</p>
+
+        <p>The reason why we used the optimistic driving times was because calculating driving times considering the expected traffic was technically expensive and was left out of scope.</p>
+
+        <figure>
+          <img src="img/posts/ontruck-tricky-times/impossible-times.png" alt="impossible times">
+          <figcaption>Minimum 'Dropoff from' time = 'Pickup from' time + X + Y</figcaption>
+        </figure>
+
+        <p>Today, drivers only make it late to one stop when the times are tight and the loading time or the driving time takes longer than expected, but other than that, this solution solved the impossible times problem.</p>
+
+        <h2>Solving the tricky times problem</h2>
+
+        <p>After the solution for the impossible times problem was designed, I moved to the tricky times problem. I started by exploring the obvious solution, which was introducing new validation rules just like we had just done for the impossible times problem, but I soon realized that they would have a negative impact on the user experience. We couldn't set a minimum 'Dropoff to' time based on the 'Dropoff from' time because pickup/dropoff points often provided shippers with specific appointment times. That means that a dropoff window of zero minutes was perfectly valid.</p>
+
+        <p>The tricky times problem could only be detected after the user selected the 'Dropoff to' time, which is the last of the four times in the booking flow, and overriding times that the user had already typed didn't make any sense. Displaying a warning to the shipper when the problem was detected didn't sound like a good solution either, considering the times were actually doable.</p>
+
+        <p>But what if, instead of adding friction to the shippers, we could just translate tricky times into non-tricky times? I started exploring this avenue, which led me to the final solution. Tricky times would happen whenever the time between the 'Pickup to' and the 'Dropoff to' was shorter than the loading time plus the driving time between the stops. By communicating to the driver a different 'Pickup to' time than the one requested by the shipper, we could solve the problem. Both the pickup and the dropoff would happen within the time window requested by the shipper, but we would avoid running late to the dropoff.</p>
+
+        <figure>
+          <img src="img/posts/ontruck-tricky-times/tricky-times.png" alt="tricky times">
+          <figcaption>Tricky times cases</figcaption>
+        </figure>
+
+        <p>To make this work, we also had to introduce some changes in the tool that our Fleet and Traffic teams use to monitor shipments. Since they had to communicate with both shippers and drivers, they needed to be able to visualize both the original times requested by the shipper and the times we shared with the drivers in the tricky times cases.</p>
+
+        <p>This solution improved the on-time rate for tricky times shipments by 7 points. That was a huge improvement, and we considered the problem solved. If at some point we can calculate driving times based on expected traffic, then we should be able to improve the on-time rate of tricky shipments even further.</p>
+
+        <p>This case study is a good example of how products are designed and built at Ontruck. It all starts with a problem-based roadmap instead of a feature-based one. From there, problem-solving rarely follows a linear path. We work in lean cycles, looking for ways to validate our hypotheses by investing as little time and effort as possible.</p>
+
+      </div>
+
+      <a href="index.html" class="reveal mt-16 inline-block text-sm text-soft hover:text-ink transition-colors">&larr; Back to work</a>
+
+    </article>
+  </main>
+
+  <footer class="border-t border-line">
+    <div class="mx-auto max-w-5xl px-6 py-12 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
+      <div class="flex items-center gap-5">
+        <span class="text-sm text-soft">Get in touch</span>
+        <a href="mailto:hi@carlossanchez.me" class="text-sm font-medium text-ink underline-offset-4 hover:underline">hi@carlossanchez.me</a>
+        <a href="https://x.com/chocotuits" target="_blank" rel="noopener" title="X" class="text-soft hover:text-ink transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+            <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+          </svg>
+          <span class="sr-only">X</span>
+        </a>
+        <a href="https://www.linkedin.com/in/carlos-sanchez-garcia/" target="_blank" rel="noopener" title="LinkedIn" class="text-soft hover:text-ink transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+          </svg>
+          <span class="sr-only">LinkedIn</span>
+        </a>
+      </div>
+      <ul class="flex items-center gap-5 text-xs text-soft">
+        <li><a href="privacy-policy.html" class="hover:text-ink transition-colors">Privacy Policy</a></li>
+        <li><a href="cookies-policy.html" class="hover:text-ink transition-colors">Cookie Policy</a></li>
+      </ul>
+    </div>
+  </footer>
 
 </body>
 </html>
-
-<!-- /nonessential resources -->
-<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Roboto:400,400i,700,700i|Lora:400,700" rel="stylesheet">

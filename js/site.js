@@ -22,6 +22,23 @@
     });
   }
 
+  // "Back to work" links read "Back to experience" and point to the
+  // Experience page when that's where the visitor came from (case study
+  // pages are now linked from both Work and Experience).
+  var backLinks = document.querySelectorAll('.back-link');
+  if (backLinks.length && document.referrer) {
+    try {
+      var referrerPath = new URL(document.referrer).pathname;
+      if (/\/experience\.html$/.test(referrerPath)) {
+        backLinks.forEach(function (a) {
+          a.href = 'experience.html';
+          var label = a.querySelector('.back-link-text');
+          if (label) label.textContent = 'Back to experience';
+        });
+      }
+    } catch (e) {}
+  }
+
   // Photo lightbox (About page)
   var lightbox = document.getElementById('lightbox');
   if (lightbox) {

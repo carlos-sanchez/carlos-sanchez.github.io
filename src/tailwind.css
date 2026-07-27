@@ -108,5 +108,32 @@
   .case-study-prose .callout__icon {
     @apply text-lg leading-none shrink-0;
   }
+
+  /* CTA/back-link arrow icons: a single subtle nudge in the direction the
+     arrow points, played on hover/focus of the link (.group). */
+  @keyframes arrow-bounce-right {
+    0% { transform: translateX(0); }
+    40% { transform: translateX(4px); }
+    100% { transform: translateX(0); }
+  }
+  @keyframes arrow-bounce-left {
+    0% { transform: translateX(0); }
+    40% { transform: translateX(-4px); }
+    100% { transform: translateX(0); }
+  }
+  .group:hover .cta-arrow-right,
+  .group:focus-visible .cta-arrow-right {
+    animation: arrow-bounce-right 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  .group:hover .cta-arrow-left,
+  .group:focus-visible .cta-arrow-left {
+    animation: arrow-bounce-left 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .cta-arrow-right,
+    .cta-arrow-left {
+      animation: none !important;
+    }
+  }
 }
 
